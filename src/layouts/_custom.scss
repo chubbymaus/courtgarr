@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500|VT323');
+html{
+  background-color: #404040;
+  font-size: 15px;
+}
+// font-family: 'VT323', monospace;
+// font-family: 'Ubuntu', sans-serif;
+
+.navbar-light .navbar-toggler{
+  border: none;
+}
+
+.navbar-brand{
+  margin-top: 0px;
+  padding-top: 0px;
+}
+a {
+  color: #0eeaff;
+  font-family: 'VT323', monospace;
+  font-size: 1.25rem;
+  &:hover{
+    text-decoration: none;
+  }
+}
