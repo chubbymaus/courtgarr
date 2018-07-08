@@ -8,9 +8,10 @@ const NavBar = styled.nav.attrs({
   background-color: ${props => props.theme.main};
   box-shadow: ${props => props.theme.shadow };
   clear-fix: both;
+ 
   .logo {
-    max-height: 40px;
-    padding-top: 8px;
+    height: 40px;
+    padding-top: 5px;
   }
   .nav-link{
      color: ${props => props.theme.color} !important;

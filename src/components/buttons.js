@@ -9,18 +9,22 @@ const Button = styled.button`
     vertical-align: middle;
     width: 188px;
     border: 2px solid transparent;
-    margin: 1em;
+    margin-right: 1em;
     padding: 0.5em 1em;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
     line-height: 1.5;
     border-radius: .20rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      @media only screen and (max-width: 600px){
+        margin: 1em;
+      }
 
 `;
 const PrimaryOutline = Button.extend `
-  font-family: 'VT323', monospace;
-  font-size: 1.2rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
   color: #31c56e !important;
   background-color: transparent;
   background-image: none;
@@ -32,14 +36,14 @@ const PrimaryOutline = Button.extend `
 
 `;
 const SecondaryOutline = Button.extend `
-  font-family: 'VT323', monospace;
-  font-size: 1.2rem;
-  color: #48acf0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  color: #4a8bff;
   background-color: transparent;
   background-image: none;
-  border-color: #48acf0;
+  border-color: #4a8bff;
     &: hover {
-    background-color: #48acf0;
+    background-color: #4a8bff;
     color: #fff;
   }
 `;

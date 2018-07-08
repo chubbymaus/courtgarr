@@ -8,6 +8,7 @@ html{
 
 .navbar-light .navbar-toggler{
   border: none;
+  
 }
 
 .navbar-brand{
@@ -16,9 +17,16 @@ html{
 }
 a {
   color: #0eeaff;
-  font-family: 'VT323', monospace;
-  font-size: 1.25rem;
+ 
+  text-transform: uppercase;
+  font-size: .9rem;
+  letter-spacing: 2px;
   &:hover{
     text-decoration: none;
+   
   }
+}
+
+.card{
+  margin-bottom: 1em;
 }

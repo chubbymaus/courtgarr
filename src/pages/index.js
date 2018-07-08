@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import Header from '../components/header'
 import Hero from '../components/jumbotron'
 import {Button,PrimaryOutline,SecondaryOutline} from '../components/buttons';
-import logo from '../img/cgicon5.png';
+import logo from '../img/cgicon_1.png';
 
 if (typeof window !== 'undefined') {
   // Make scroll behavior of internal links smooth
@@ -14,8 +14,8 @@ if (typeof window !== 'undefined') {
 
 const IndexPage = () => (
   <div>
-  <Header bgColor={'#f3f3f3'} logoProp={logo} textColor={'#444'}/>
-  <Hero bgColor={'#f3f3f3'} />
+  <Header bgColor={'#f3f5ff'} logoProp={logo} textColor={'#444'}/>
+  <Hero bgColor={'#f3f5ff'} />
 
   <div className="container" id="about">
     <h1>Hi people</h1>
