@@ -38,12 +38,12 @@ const PrimaryOutline = Button.extend `
 const SecondaryOutline = Button.extend `
   font-family: 'Ubuntu', sans-serif;
   font-size: 1rem;
-  color: #4a8bff;
+  color: #48acf0;
   background-color: transparent;
   background-image: none;
-  border-color: #4a8bff;
+  border-color: #48acf0;
     &: hover {
-    background-color: #4a8bff;
+    background-color: #48acf0;
     color: #fff;
   }
 `;
