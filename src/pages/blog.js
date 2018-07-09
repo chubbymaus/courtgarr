@@ -2,10 +2,16 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Header from '../components/header'
 import logo from '../img/cgicon_1.png';
+import styled from 'styled-components';
+
+const BlogContainer = styled.div`
+  margin-top: 2.5rem;
+`;
 
 const BlogPage = ({data}) => (
   <div>
     <Header bgColor={'#f3f5ff'} logoProp={logo} />
+    <BlogContainer>
     <div className="container">
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
@@ -27,6 +33,7 @@ const BlogPage = ({data}) => (
     ))}
     
     </div>
+    </BlogContainer>
   </div>
 )
 export const pageQuery = graphql `

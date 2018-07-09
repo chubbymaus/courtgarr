@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 import {Button,PrimaryOutline,SecondaryOutline} from '../components/buttons';
-import bgimage from '../img/bgimage2_5.png';
+import bgimage from '../img/bgimage@2.5x.png';
 
 const Jumbotron = styled.div.attrs({
   className: 'jumbotron',
@@ -13,6 +13,7 @@ const Jumbotron = styled.div.attrs({
   background-position: right bottom;
   background-size: 50%;
   height: 95vh;
+  margin-bottom: 0px !important;
   h1{
     font-size: 3rem;
   }
