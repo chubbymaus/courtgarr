@@ -7,7 +7,7 @@ const Button = styled.button`
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
-    width: 188px;
+    min-width: 188px;
     border: 2px solid transparent;
     margin-right: 1em;
     padding: 0.5em 1em;
@@ -47,9 +47,22 @@ const SecondaryOutline = Button.extend `
     color: #fff;
   }
 `;
+const AltOutline = Button.extend `
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  background-color: transparent;
+  background-image: none;
+  border-color: #333;
+    &: hover {
+    background-color: #333;
+    color: #fff;
+  }
+`;
 
 export default {
   Button, 
+  AltOutline,
   PrimaryOutline, 
   SecondaryOutline
 }
