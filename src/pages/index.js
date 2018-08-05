@@ -43,7 +43,7 @@ const IndexPage = () => (
   <img src={InfernoApps}/>
   <p className="text-muted"></p>
   <hr />
-    <h5 className="card-title">Special title treatment</h5>
+    <h5 className="card-title">My Freelance Design Site</h5>
     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <SecondaryOutline>View Site</SecondaryOutline>
   </div>
@@ -55,7 +55,7 @@ const IndexPage = () => (
   <div className="card-body">
   <img src={Lofi}/>
     <hr />
-    <h5 className="card-title">Special title treatment</h5>
+    <h5 className="card-title">Online Clothing Store</h5>
     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <SecondaryOutline>View Site</SecondaryOutline>
   </div>
@@ -67,7 +67,7 @@ const IndexPage = () => (
   <div className="card-body">
   <img src={BlueHaus}/>
     <hr />
-    <h5 className="card-title">Special title treatment</h5>
+    <h5 className="card-title">Code Snippet Library</h5>
     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <SecondaryOutline>View Site</SecondaryOutline>
   </div>
@@ -84,7 +84,7 @@ const IndexPage = () => (
   <div className="card-body">
   <img src={InfernoCamp}/>
   <hr />
-    <h5 className="card-title">Special title treatment</h5>
+    <h5 className="card-title">Learning Management System</h5>
     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <SecondaryOutline>View Site</SecondaryOutline>
   </div>
@@ -96,7 +96,7 @@ const IndexPage = () => (
   <div className="card-body">
   <img src={KandanLogo}/>
     <hr />
-    <h5 className="card-title">Special title treatment</h5>
+    <h5 className="card-title">React UI Library</h5>
     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <h4 className='text-muted'>under development...</h4>
   </div>
@@ -108,7 +108,7 @@ const IndexPage = () => (
   <div className="card-body">
   <img src={SquiblyLogo}/>
     <hr />
-    <h5 className="card-title">Special title treatment</h5>
+    <h5 className="card-title">Secure Chat App</h5>
     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <h4 className='text-muted'>under development...</h4>
   </div>

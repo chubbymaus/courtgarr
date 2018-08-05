@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Header from '../components/header'
-import logo from '../img/cgicon_1.png';
+import logo from '../img/blueLogo.png';
 import styled from 'styled-components';
 
 const BlogContainer = styled.div`
@@ -10,7 +10,7 @@ const BlogContainer = styled.div`
 
 const BlogPage = ({data}) => (
   <div>
-    <Header bgColor={'#f3f5ff'} logoProp={logo} />
+    <Header bgColor={'#333'} logoProp={logo} textColor={'#f6f6f6'} />
     <BlogContainer>
     <div className="container">
     <h1>Hi people</h1>

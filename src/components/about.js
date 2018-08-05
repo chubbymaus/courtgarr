@@ -30,11 +30,13 @@ const Jumbotron = styled.div.attrs({
    color: #333;
    padding-top: 60px;
   }
-  @media only screen and (max-width: 768px){
-    background-image: none;
+  @media only screen and (max-width: 978px){
+    background-position: 3% 65%;
   }
+ 
   @media only screen and (max-width: 600px){
-      
+      background-position: center bottom;
+      background-size: 85%;
       h1{
         
         font-size: 2rem;
@@ -64,8 +66,7 @@ const About = ({ bgColor, textColor}) => (
     <div className="d-flex flex-row flex-wrap justify-content-center align-items-center">
       <div className="col">
         <h1>Marketing Meet Design</h1>
-        <p> I have a bachelors degree in Marketing<br/>In addition to years of experience<br/> as a freelance developer </p>
-
+        <p> I have a bachelors degree in Marketing<br/>In addition to years of experience<br/> as a freelance developer</p>
           <a href="#projects"><AltOutline>View Projects</AltOutline></a>
         
       </div>

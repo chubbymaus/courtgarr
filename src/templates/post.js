@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Header from '../components/header';
-import logo from '../img/cgicon_1.png';
+import logo from '../img/greenLogo.png';
 
 export default function Template ({data}) {
 
@@ -9,7 +9,7 @@ export default function Template ({data}) {
 
   return (
     <div>
-    <Header bgColor={'#f3f5ff'} logoProp={logo}/>
+    <Header bgColor={'#333'} logoProp={logo} textColor={'#f6f6f6'}/>
      <div className="container">   
       <h1>{post.frontmatter.title}</h1>
       <hr/>

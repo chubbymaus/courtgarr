@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PortfolioItem = styled.div.attrs({
-  className: 'col-md-4',
+  className: 'col-lg-4',
 })`
  padding: 1rem;
 
