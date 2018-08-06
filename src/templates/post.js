@@ -1,7 +1,15 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import Header from '../components/header';
-import logo from '../img/greenLogo.png';
+import Header from '../components/Header';
+import logo from '../img/cgicon_1.png';
+import styled from 'styled-components';
+import Footer from '../components/Footer'
+
+const PostContainer = styled.div`
+  margin: 50px auto;
+  min-height: 70vh;
+`
+
 
 export default function Template ({data}) {
 
@@ -9,13 +17,45 @@ export default function Template ({data}) {
 
   return (
     <div>
-    <Header bgColor={'#333'} logoProp={logo} textColor={'#f6f6f6'}/>
-     <div className="container">   
-      <h1>{post.frontmatter.title}</h1>
+    <Header bgColor={'#f3f5ff'} logoProp={logo} textColor={'#444'}/>
+    <PostContainer>
+     <div className="container">  
+     <div className='row'>
+     <div className='col-md-8'> 
+      <div className="card">
+      <div className="card-body">
+      <h1 className="card-title">{post.frontmatter.title}</h1>
       <hr/>
       <div dangerouslySetInnerHTML={{__html: post.html}} />
+      
       <Link to="/blog">Go back</Link>
       </div>
+      </div>
+      </div>
+    <div className="col-md-4">
+           <div className="card">
+     <div className="card-body">
+     <h5 className="card-title">Court Garr</h5>
+    <hr />
+    <p className="card-text">Hi! Welcome to my blog. This is were I write about projects I'm working on and technologies I'm excited about.</p>
+
+     </div>   
+  
+     </div>
+           <div className="card">
+     <div className="card-body">
+     <h5 className="card-title">Court Garr</h5>
+    <hr />
+    <p className="card-text">Hi! Welcome to my blog. This is were I write about projects I'm working on and technologies I'm excited about.</p>
+
+     </div>   
+  
+     </div>
+    </div>
+      </div>
+      </div>
+      </PostContainer>
+      <Footer />
     </div>
   )
 }

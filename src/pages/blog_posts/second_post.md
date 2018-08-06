@@ -2,7 +2,7 @@
 path: '/blog/second-post'
 title: 'second post'
 published: true
-date: '2018-06-26'
+date: '06-26-2018'
 ---
 
 # Hello from the second post!

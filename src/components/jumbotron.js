@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
-import {Button,PrimaryOutline,SecondaryOutline} from '../components/buttons';
+import {PrimaryOutline,SecondaryOutline} from '../components/Buttons';
 import bgimage from '../img/bgimage@2.5x.png';
 
 const Jumbotron = styled.div.attrs({

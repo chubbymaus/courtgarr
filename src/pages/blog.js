@@ -1,21 +1,22 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Header from '../components/header'
-import logo from '../img/blueLogo.png';
+import Header from '../components/Header'
+import logo from '../img/cgicon_1.png';
 import styled from 'styled-components';
-
+import Footer from '../components/Footer';
 const BlogContainer = styled.div`
-  margin-top: 2.5rem;
+  margin: 50px auto;
+  background-color: #f3f5ff;
 `;
 
 const BlogPage = ({data}) => (
   <div>
-    <Header bgColor={'#333'} logoProp={logo} textColor={'#f6f6f6'} />
+    <Header bgColor={'#f3f5ff'} logoProp={logo} textColor={'#444'}/>
     <BlogContainer>
     <div className="container">
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <div className="row">
+    <div className="col-md-8">
+
     
     {data.allMarkdownRemark.edges.map(post => (
      <div className="card">
@@ -31,9 +32,31 @@ const BlogPage = ({data}) => (
      </div>
      
     ))}
-    
+    </div>
+    <div className="col-md-4">
+           <div className="card">
+     <div className="card-body">
+     <h5 className="card-title">Court Garr</h5>
+    <hr />
+    <p className="card-text">Hi! Welcome to my blog. This is were I write about projects I'm working on and technologies I'm excited about.</p>
+
+     </div>   
+  
+     </div>
+           <div className="card">
+     <div className="card-body">
+     <h5 className="card-title">Court Garr</h5>
+    <hr />
+    <p className="card-text">Hi! Welcome to my blog. This is were I write about projects I'm working on and technologies I'm excited about.</p>
+
+     </div>   
+  
+     </div>
+    </div>
+    </div>
     </div>
     </BlogContainer>
+    <Footer />
   </div>
 )
 export const pageQuery = graphql `
