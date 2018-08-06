@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Section from './Section';
-
+import Link from 'gatsby-link';
 import {SecondaryOutline} from './Buttons';
 import BlueHaus from '../img/bluehaus.png';
 import InfernoApps from '../img/infernoapps.png';
@@ -16,13 +16,20 @@ const PortfolioItem = styled.div.attrs({
  padding: 1rem;
 
  .card{
-       height: 300px;
+       min-height: 300px;
        background-color: #f6f6f6;
        color: #333;
        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
  }
+ .list-group-item{
+   background-color: #f6f6f6;
+ }
  img{
    height: 45px;
+ }
+
+ button{
+   margin-top: 10px;
  }
 
     hr{
@@ -55,21 +62,35 @@ export default class Projects extends Component {
           <img src={InfernoApps}/>
           <p className="text-muted"></p>
           <hr />
-            <h5 className="card-title">My Freelance Design Site</h5>
+            <h5 className="card-title">Freelance Design Site</h5>
             <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <SecondaryOutline>View Site</SecondaryOutline>
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">Wordpress</li>
+              <li className="list-group-item">Adobe Illustrator</li>
+              <li className="list-group-item">Divi Theme</li>
+              <li className="list-group-item">Cpanel Hosting</li>
+            </ul>
+            <a href='http://infernoapps.com' target="_blank"><SecondaryOutline>View Site</SecondaryOutline></a>
           </div>
         </div>
         </PortfolioItem>
-        <PortfolioItem>
-          
+
+      <PortfolioItem>
+        
         <div className="card">
+          
           <div className="card-body">
-          <img src={Lofi}/>
-            <hr />
-            <h5 className="card-title">Online Clothing Store</h5>
+          <img src={InfernoCamp}/>
+          <hr />
+            <h5 className="card-title">Tutorials/LMS</h5>
             <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <SecondaryOutline>View Site</SecondaryOutline>
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">Ruby on Rails</li>
+              <li className="list-group-item">Devise Gem</li>
+              <li className="list-group-item">GitHub</li>
+              <li className="list-group-item">Heroku</li>
+            </ul>
+            <a href='http://infernocamp.com' target="_blank"><SecondaryOutline>View Site</SecondaryOutline></a>
           </div>
         </div>
         </PortfolioItem>
@@ -81,7 +102,13 @@ export default class Projects extends Component {
             <hr />
             <h5 className="card-title">Code Snippet Library</h5>
             <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <SecondaryOutline>View Site</SecondaryOutline>
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">Ruby on Rails</li>
+              <li className="list-group-item">Devise Gem</li>
+              <li className="list-group-item">ActiveRecord ORM</li>
+              <li className="list-group-item">Adobe Illustrator</li>
+            </ul>
+            <a href='http://bluehaus.io' target="_blank"><SecondaryOutline>View Site</SecondaryOutline></a>
           </div>
         </div>
         </PortfolioItem>
@@ -90,15 +117,20 @@ export default class Projects extends Component {
             </div>
             <div className="row">
         <PortfolioItem>
-        
-        <div className="card">
           
+        <div className="card">
           <div className="card-body">
-          <img src={InfernoCamp}/>
-          <hr />
-            <h5 className="card-title">Learning Management System</h5>
+          <img src={Lofi}/>
+            <hr />
+            <h5 className="card-title">Online Clothing Store</h5>
             <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <SecondaryOutline>View Site</SecondaryOutline>
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">Wordpress</li>
+              <li className="list-group-item">Adobe Illustrator</li>
+              <li className="list-group-item">Woocommerce & Printful</li>
+              <li className="list-group-item">FlyWheel</li>
+            </ul>
+            <a href='http://infernoapps.com' target="_blank"><SecondaryOutline>View Site</SecondaryOutline></a>
           </div>
         </div>
         </PortfolioItem>
@@ -110,7 +142,13 @@ export default class Projects extends Component {
             <hr />
             <h5 className="card-title">React UI Library</h5>
             <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <h4 className='text-muted'>under development...</h4>
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">React</li>
+              <li className="list-group-item">NPM</li>
+              <li className="list-group-item">Flexbox</li>
+              <li className="list-group-item">Styled-Components</li>
+            </ul>
+            <SecondaryOutline>under development...</SecondaryOutline>
           </div>
         </div>
         </PortfolioItem>
@@ -122,7 +160,13 @@ export default class Projects extends Component {
             <hr />
             <h5 className="card-title">Secure Chat App</h5>
             <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <h4 className='text-muted'>under development...</h4>
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">React</li>
+              <li className="list-group-item">NodeJs</li>
+              <li className="list-group-item">GraphQL</li>
+              <li className="list-group-item">Postgres</li>
+            </ul>
+            <SecondaryOutline>under development...</SecondaryOutline>
           </div>
         </div>
         </PortfolioItem>
