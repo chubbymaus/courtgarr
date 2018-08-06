@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Section from '../components/Section';
 import Link from 'gatsby-link';
 import {Button} from './Buttons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Submit = Button.extend`
   background-color: #45BA82;
@@ -15,14 +16,17 @@ export default class ContactForm extends Component {
   render() {
     return (
       <div>
-        <Section main={'#3EAEEA'} textColor={'#f6f6f6'}>
+        <Section main={'#3EAEEA'} textColor={'#333'}>
           <div className="container">
             <div className="row">
               <div className="col-md-6">
                 <h1>Hi people</h1>
                 <p>Welcome to your new Gatsby site.</p>
                 <p>Now go build something great.</p>
-                <Link to="/page-2/">Go to page 2</Link>
+                <FontAwesomeIcon icon={['fab', 'github-alt']} className="fa-3x"/> 
+                <FontAwesomeIcon icon={['fab', 'npm']} className="fa-3x"/>
+                <FontAwesomeIcon icon={['fab', 'behance']} className="fa-3x"/>
+                <FontAwesomeIcon icon={['fab', 'linkedin']} className="fa-3x"/>
                 <br/>
                 <Link to = "/page-3/"> Go to page 3 </Link>
               </div>

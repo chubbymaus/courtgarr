@@ -4,6 +4,8 @@ import Header from '../components/Header'
 import logo from '../img/cgicon_1.png';
 import styled from 'styled-components';
 import Footer from '../components/Footer';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const BlogContainer = styled.div`
   margin: 50px auto;
   background-color: #f3f5ff;
@@ -36,22 +38,19 @@ const BlogPage = ({data}) => (
     <div className="col-md-4">
            <div className="card">
      <div className="card-body">
-     <h5 className="card-title">Court Garr</h5>
+     <h4 className="card-title">Court Garr</h4> 
     <hr />
     <p className="card-text">Hi! Welcome to my blog. This is were I write about projects I'm working on and technologies I'm excited about.</p>
 
+      <FontAwesomeIcon icon={['fab', 'github-alt']} className="fa-2x"/> 
+      <FontAwesomeIcon icon={['fab', 'npm']} className="fa-2x"/>
+      <FontAwesomeIcon icon={['fab', 'behance']} className="fa-2x"/>  
+      <FontAwesomeIcon icon={['fab', 'linkedin']} className="fa-2x"/>       
+               
      </div>   
   
      </div>
-           <div className="card">
-     <div className="card-body">
-     <h5 className="card-title">Court Garr</h5>
-    <hr />
-    <p className="card-text">Hi! Welcome to my blog. This is were I write about projects I'm working on and technologies I'm excited about.</p>
 
-     </div>   
-  
-     </div>
     </div>
     </div>
     </div>

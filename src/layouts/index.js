@@ -4,6 +4,13 @@ import Helmet from 'react-helmet'
 import 'bootstrap';
 import './index.scss'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fab, faStroopwafel)
+
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
@@ -13,7 +20,7 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    {/* <Header bgColor={'tomato'} /> */}
+   
     <div>
       {children()}
     </div>
