@@ -9,6 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const PostContainer = styled.div`
   margin: 50px auto;
   min-height: 70vh;
+
+
 `
 
 

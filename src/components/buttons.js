@@ -18,7 +18,7 @@ const Button = styled.button`
     border-radius: .20rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
       @media only screen and (max-width: 600px){
-        margin: 1em;
+        margin: 1rem auto;
       }
 
 `;

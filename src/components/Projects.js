@@ -30,6 +30,7 @@ const PortfolioItem = styled.div.attrs({
 
  button{
    margin-top: 10px;
+   width: 100%;
  }
 
     hr{
@@ -87,7 +88,7 @@ export default class Projects extends Component {
             <ul className="list-group list-group-flush">
               <li className="list-group-item">Ruby on Rails</li>
               <li className="list-group-item">Devise Gem</li>
-              <li className="list-group-item">GitHub</li>
+              <li className="list-group-item">Twitter Bootstrap</li>
               <li className="list-group-item">Heroku</li>
             </ul>
             <a href='http://infernocamp.com' target="_blank"><SecondaryOutline>View Site</SecondaryOutline></a>
@@ -106,7 +107,7 @@ export default class Projects extends Component {
               <li className="list-group-item">Ruby on Rails</li>
               <li className="list-group-item">Devise Gem</li>
               <li className="list-group-item">ActiveRecord ORM</li>
-              <li className="list-group-item">Adobe Illustrator</li>
+              <li className="list-group-item">Elastic Search</li>
             </ul>
             <a href='http://bluehaus.io' target="_blank"><SecondaryOutline>View Site</SecondaryOutline></a>
           </div>

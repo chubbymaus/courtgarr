@@ -20,9 +20,10 @@ export default class ContactForm extends Component {
           <div className="container">
             <div className="row">
               <div className="col-md-6">
-                <h1>Hi people</h1>
-                <p>Welcome to your new Gatsby site.</p>
-                <p>Now go build something great.</p>
+                <h1>About Me</h1>
+                <h5>I am a Southern Utah native with a deep love of learning, music, and traveling. In addition to learning new programming or design techniques I love studying foreign languages. More specifically Korean, Chinese, and Japanese.</h5>
+                <br />
+                <h4>View more at:</h4>
                 <FontAwesomeIcon icon={['fab', 'github-alt']} className="fa-3x"/> 
                 <FontAwesomeIcon icon={['fab', 'npm']} className="fa-3x"/>
                 <FontAwesomeIcon icon={['fab', 'behance']} className="fa-3x"/>
