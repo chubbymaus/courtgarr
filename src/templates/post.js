@@ -3,12 +3,22 @@ import Link from 'gatsby-link';
 import Header from '../components/Header';
 import logo from '../img/cgicon_1.png';
 import styled from 'styled-components';
-import Footer from '../components/Footer'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Footer from '../components/Footer';
+import AboutCard from '../components/AboutCard';
 
 const PostContainer = styled.div`
   margin: 50px auto;
   min-height: 70vh;
+a {
+  color: #48acf0;
+
+  font-size: .9rem;
+  letter-spacing: 1px;
+  &:hover{
+    text-decoration: none;
+   
+  }
+}
 
 
 `
@@ -35,21 +45,9 @@ export default function Template ({data}) {
       </div>
       </div>
       </div>
-    <div className="col-md-4">
-           <div className="card">
-     <div className="card-body">
-     <h4 className="card-title">Court Garr</h4>
-    <hr />
-    <p className="card-text">Hi! Welcome to my blog. This is were I write about projects I'm working on and technologies I'm excited about.</p>
-        <FontAwesomeIcon icon={['fab', 'github-alt']} className="fa-2x"/> 
-        <FontAwesomeIcon icon={['fab', 'npm']} className="fa-2x"/>
-        <FontAwesomeIcon icon={['fab', 'behance']} className="fa-2x"/>  
-        <FontAwesomeIcon icon={['fab', 'linkedin']} className="fa-2x"/>  
-     </div>   
-  
-     </div>
-
-    </div>
+        <div className="col-md-4">
+          <AboutCard/>
+        </div>
       </div>
       </div>
       </PostContainer>

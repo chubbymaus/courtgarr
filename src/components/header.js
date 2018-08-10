@@ -46,10 +46,10 @@ const Header = ({ bgColor, logoProp, textColor, shadow }) => (
         <Link className="nav-link" to="/">Home</Link>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="/">Projects</Link>
+        <a href="/#projects" className="nav-link">Projects</a>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="/blog">Contact</Link>
+        <a href="/#contact" className="nav-link">Contact</a>
       </li>
       <li className="nav-item">
         <Link className="nav-link" to="/blog">Blog</Link>

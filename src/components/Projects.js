@@ -131,7 +131,7 @@ export default class Projects extends Component {
               <li className="list-group-item">Woocommerce & Printful</li>
               <li className="list-group-item">FlyWheel</li>
             </ul>
-            <a href='http://infernoapps.com' target="_blank"><SecondaryOutline>View Site</SecondaryOutline></a>
+            <a href='#' target="_blank"><SecondaryOutline>under development...</SecondaryOutline></a>
           </div>
         </div>
         </PortfolioItem>
