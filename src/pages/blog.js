@@ -10,7 +10,7 @@ import AboutCard from '../components/AboutCard';
 const BlogContainer = styled.div`
   margin: 50px auto;
   background-color: #f3f5ff;
-
+  min-height: 80vh;
   a {
   color: #48acf0;
 
@@ -18,7 +18,7 @@ const BlogContainer = styled.div`
   letter-spacing: 1px;
   &:hover{
     text-decoration: none;
-   
+
   }
 }
 
@@ -32,20 +32,20 @@ const BlogPage = ({data}) => (
     <div className="row">
     <div className="col-md-8">
 
-    
+
     {data.allMarkdownRemark.edges.map(post => (
      <div className="card">
      <div className="card-body">
      <h5 className="card-title">{post.node.frontmatter.title}</h5>
     <h6 className="card-subtitle mb-2 text-muted">{post.node.frontmatter.date}</h6>
     <p className="card-text">{post.node.excerpt}</p>
-      <Link 
+      <Link
           key={post.node.id}
           to={post.node.frontmatter.path}>Read more...</Link>
-     </div>   
-     <br/>  
      </div>
-     
+     <br/>
+     </div>
+
     ))}
     </div>
     <div className="col-md-4">

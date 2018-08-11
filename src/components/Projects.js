@@ -17,12 +17,12 @@ const PortfolioItem = styled.div.attrs({
 
  .card{
        min-height: 300px;
-       background-color: #f6f6f6;
+       background-color: #fff;
        color: #333;
        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
  }
  .list-group-item{
-   background-color: #f6f6f6;
+   background-color: #fff;
  }
  img{
    height: 45px;
@@ -34,7 +34,7 @@ const PortfolioItem = styled.div.attrs({
  }
 
     hr{
-        
+
         height: 5px;
         color: #333;
         background: #3EAEEA;
@@ -50,15 +50,15 @@ export default class Projects extends Component {
           <Section main={'#333'} textColor={'#fcfcfc'} id='projects'>
             <div className='container'>
               <h1>Projects</h1>
-              
+
             </div>
 
           <div className="container" >
             <div className="row">
         <PortfolioItem>
-        
+
         <div className="card">
-          
+
           <div className="card-body">
           <img src={InfernoApps}/>
           <p className="text-muted"></p>
@@ -77,9 +77,9 @@ export default class Projects extends Component {
         </PortfolioItem>
 
       <PortfolioItem>
-        
+
         <div className="card">
-          
+
           <div className="card-body">
           <img src={InfernoCamp}/>
           <hr />
@@ -97,7 +97,7 @@ export default class Projects extends Component {
         </PortfolioItem>
         <PortfolioItem>
         <div className="card">
-          
+
           <div className="card-body">
           <img src={BlueHaus}/>
             <hr />
@@ -118,7 +118,7 @@ export default class Projects extends Component {
             </div>
             <div className="row">
         <PortfolioItem>
-          
+
         <div className="card">
           <div className="card-body">
           <img src={Lofi}/>
@@ -136,7 +136,7 @@ export default class Projects extends Component {
         </div>
         </PortfolioItem>
         <PortfolioItem>
-          
+
         <div className="card">
           <div className="card-body">
           <img src={KandanLogo}/>
@@ -155,7 +155,7 @@ export default class Projects extends Component {
         </PortfolioItem>
         <PortfolioItem>
         <div className="card">
-          
+
           <div className="card-body">
           <img src={SquiblyLogo}/>
             <hr />

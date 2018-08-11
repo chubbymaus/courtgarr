@@ -8,7 +8,7 @@ import AboutCard from '../components/AboutCard';
 
 const PostContainer = styled.div`
   margin: 50px auto;
-  min-height: 70vh;
+  min-height: 80vh;
 a {
   color: #48acf0;
 
@@ -16,7 +16,7 @@ a {
   letter-spacing: 1px;
   &:hover{
     text-decoration: none;
-   
+
   }
 }
 
@@ -32,15 +32,15 @@ export default function Template ({data}) {
     <div>
     <Header bgColor={'#f3f5ff'} logoProp={logo} textColor={'#444'}/>
     <PostContainer>
-     <div className="container">  
+     <div className="container">
      <div className='row'>
-     <div className='col-md-8'> 
+     <div className='col-md-8'>
       <div className="card">
       <div className="card-body">
       <h1 className="card-title">{post.frontmatter.title}</h1>
       <hr/>
       <div dangerouslySetInnerHTML={{__html: post.html}} />
-      
+
       <Link to="/blog">Go back</Link>
       </div>
       </div>
