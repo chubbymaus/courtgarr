@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import 'bootstrap';
+
 import './index.scss'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -24,6 +24,7 @@ const Layout = ({ children, data }) => (
     <div>
       {children()}
     </div>
+    
   </div>
 )
 
