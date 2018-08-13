@@ -35,11 +35,11 @@ const Header = ({ bgColor, logoProp, textColor, shadow }) => (
         <Link className="navbar-brand" to="/">
         <img src={logoProp} alt='Squibly Logo' className="logo"/>
       </Link>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
-  </button>
+  </button> */}
 
-  <div className="collapse navbar-collapse" id="navbarSupportedContent">
+  {/* <div className="collapse navbar-collapse" id="navbarSupportedContent"> */}
     <ul className="navbar-nav ml-auto">
 
       <li className="nav-item">
@@ -57,7 +57,7 @@ const Header = ({ bgColor, logoProp, textColor, shadow }) => (
     </ul>
 
   </div>
-  </div>
+  {/* </div> */}
 </NavBar>
 
 
