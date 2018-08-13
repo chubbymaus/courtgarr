@@ -38,17 +38,17 @@ export default class ContactForm extends Component {
                   <form name="contact" method="POST" netlify>
                       <div className="form-group">
                         
-                        <input type="text" className="form-control"  placeholder="Name"/>
+                        <input type="text" className="form-control" name="name" placeholder="Name"/>
                         
                       </div>
                       <div className="form-group">
-                        <input type="email" className="form-control" aria-describedby="emailHelp" placeholder="Email"/>
+                        <input type="email" className="form-control" aria-describedby="emailHelp" placeholder="Email" name="email"/>
                       </div>
                       <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Phone Number"/>
+                        <input type="text" className="form-control" name="phone" placeholder="Phone Number"/>
                       </div>
                       <div className="form-group">
-                        <textarea className="form-control" placeholder="Message..." rows="5"></textarea>
+                        <textarea className="form-control" name="message" placeholder="Message..." rows="5"></textarea>
                       </div>
                       <Submit type="submit">Send</Submit>
                     

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 
 const iconWrapper = styled.div`
-
+  margin-bottom: 10px;
 `
 export default class SocialLinks extends Component {
   render() {
