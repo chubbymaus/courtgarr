@@ -41,12 +41,22 @@ export default class ContactForm extends Component {
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     >
-                      <input type="text" name="name" placeholder="Name"/>
-                      <input type="email" placeholder="Email" name="email"/>     
-                      <input type="text" name="phone" placeholder="Phone Number"/>
-                      <textarea name="message" placeholder="Message..." rows="5"></textarea>
-                      
+                      <input type="hidden" name="form-name" value="contact" />
                       <input type="hidden" name="bot-field" />
+                      <div className="form-group">
+                        
+                        <input type="text" className="form-control" name="name" placeholder="Name"/>
+                        
+                      </div>
+                      <div className="form-group">
+                        <input type="email" className="form-control" aria-describedby="emailHelp" placeholder="Email" name="email"/>
+                      </div>
+                      <div className="form-group">
+                        <input type="text" className="form-control" name="phone" placeholder="Phone Number"/>
+                      </div>
+                      <div className="form-group">
+                        <textarea className="form-control" name="message" placeholder="Message..." rows="5"></textarea>
+                      </div>
                       <Submit type="submit">Send</Submit>
                     
                   </form>
