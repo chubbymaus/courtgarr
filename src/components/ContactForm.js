@@ -41,9 +41,6 @@ export default class ContactForm extends Component {
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     >
-                      <p className="hidden">
-                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                      </p>
                       <div className="form-group">
                         
                         <input type="text" className="form-control" name="name" placeholder="Name"/>
@@ -58,6 +55,7 @@ export default class ContactForm extends Component {
                       <div className="form-group">
                         <textarea className="form-control" name="message" placeholder="Message..." rows="5"></textarea>
                       </div>
+                      <input type="hidden" name="bot-field" />
                       <Submit type="submit">Send</Submit>
                     
                   </form>
