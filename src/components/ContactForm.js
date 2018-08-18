@@ -35,7 +35,15 @@ export default class ContactForm extends Component {
                   <h2>Drop me a line...</h2>
                 </div>
                 
-                  <form name="contact" method="POST" netlify>
+                    <form 
+                    name="contact" 
+                    method="POST" 
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
+                    >
+                      <p className="hidden">
+                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                      </p>
                       <div className="form-group">
                         
                         <input type="text" className="form-control" name="name" placeholder="Name"/>
