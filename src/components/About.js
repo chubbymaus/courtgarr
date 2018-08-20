@@ -10,7 +10,7 @@ const Jumbotron = styled.div.attrs({
   background-image: url(${aboutImage});
   background-repeat: no-repeat;
   background-position: 5% 50%; 
-  background-size: 50%;
+  background-size: 45%;
   height: 100vh;
   margin-bottom: 0px !important;
   border-radius: 0 !important;
@@ -30,7 +30,7 @@ const Jumbotron = styled.div.attrs({
    padding-top: 60px;
   }
   @media only screen and (max-width: 978px){
-    background-position: 3% 65%;
+    background-position: 3% 75%;
   }
  
   @media only screen and (max-width: 600px){
@@ -64,9 +64,10 @@ const About = ({ bgColor, textColor}) => (
   <div className="container">
     <div className="d-flex flex-row flex-wrap justify-content-center align-items-center">
       <div className="col">
-        <h1>Marketing Meet Design</h1>
-        <p> I have a bachelors degree in Marketing<br/>In addition to years of experience<br/> as a freelance developer</p>
-          <a href="#projects"><AltOutline>View Projects</AltOutline></a>
+        <h1>Design + Marketing</h1>
+        <p> I began building web projects 5 years ago <br/>
+          while working on a degree in Marketing at SUU. <br/> Since then I 've helped businesses throughout Utah build <br/> their web presence and plan their marketing strategies. </p>
+          {/* <a href="#projects"><AltOutline>View Projects</AltOutline></a> */}
         
       </div>
     </div>
