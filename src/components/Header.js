@@ -45,14 +45,12 @@ const Header = ({ bgColor, logoProp, textColor, shadow }) => (
       <li className="nav-item">
         <Link className="nav-link" to="/">Home</Link>
       </li>
-      <li className="nav-item">
-        <a href="/#projects" className="nav-link">Projects</a>
-      </li>
-      <li className="nav-item">
-        <a href="/#contact" className="nav-link">Contact</a>
-      </li>
+
       <li className="nav-item">
         <Link className="nav-link" to="/blog">Blog</Link>
+      </li>
+      <li className="nav-item">
+        <Link to="/contact" className="nav-link">Say Hello...</Link>
       </li>
     </ul>
 

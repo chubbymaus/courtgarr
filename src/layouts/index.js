@@ -6,11 +6,10 @@ import './index.scss'
 import favicon from '../img/favicon.png';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
+import { faFileCode, faChartArea, faSitemap } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faStroopwafel)
+library.add(fab, faFileCode, faChartArea, faSitemap)
 
 const Layout = ({ children, data }) => (
   <div>

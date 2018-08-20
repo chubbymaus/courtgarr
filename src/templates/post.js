@@ -7,8 +7,12 @@ import Footer from '../components/Footer';
 import AboutCard from '../components/AboutCard';
 
 const PostContainer = styled.div`
-  margin: 50px auto;
+   margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f3f5ff;
   min-height: 80vh;
+  
 a {
   color: #48acf0;
 

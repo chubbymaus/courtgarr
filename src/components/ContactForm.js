@@ -17,7 +17,7 @@ export default class ContactForm extends Component {
   render() {
     return (
       <div>
-        <Section main={'#3EAEEA'} textColor={'#333'} id="contact">
+        <Section main={'#f3f5ff'} textColor={'#333'} id="contact">
           <div className="container">
             <div className="row">
               <div className="col-md-6">
