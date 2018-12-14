@@ -1,35 +1,68 @@
-import React from 'react';
+import React from 'react'
 import Link from 'gatsby-link';
-
 import styled from 'styled-components';
+import HeroImage from '../images/screens.png';
+import {
+  FontAwesomeIcon
+} from '@fortawesome/react-fontawesome'
 
-const FooterContainer = styled.div`
-  background-color: #333;
-`;
-
-const FooterHero = styled.div `
-
-  margin-right: auto;
-  margin-left: auto;
-      p{
-        text-transform: uppercase;
-        margin-bottom: 0;
-        padding: 1rem 0;
-        letter-spacing: 1px;
-        color: #fcfcfc;
+const FooterSection = styled.footer`
+    a{
+      color: #f1f0ee;
     }
-
+    a:hover{
+      color: #22A0F3;
+    }
 `;
 
 
 const Footer = () => (
- <FooterContainer>
-    <FooterHero>
-      <div className="container">
-      <p> &copy; {new Date().getFullYear()} Court Garr</p>
+    <FooterSection className="section has-background-primary is-small has-text-centered">
+      <div className="container is-narrow">
+        <div className="logo"></div>
+        <div className="columns has-text-white is-centered"> 
+          <div className="column is-half">
+            <h1 className="title has-text-white ">Living, learning, &amp; leveling up one day at a time.</h1>
+          </div>
+        </div>
+        <div className="columns has-text-white is-centered"> 
+          <div className="column is-half">
+            <h3 style={{fontSize: '2rem'}}>
+            <a href="https://dribbble.com/court_garr">
+              <FontAwesomeIcon icon={['fab', 'dribbble']} />
+            </a>
+            <span>&nbsp;&nbsp;
+              <a href="https://www.behance.net/court090c">
+              <FontAwesomeIcon icon={['fab', 'behance']} />
+              </a>
+            </span>
+            <span>&nbsp;&nbsp;
+              <a href="https://www.github.com/chubbymaus">
+              <FontAwesomeIcon icon={['fab', 'github']} />
+              </a>
+            </span>
+            <span>&nbsp;&nbsp;
+              <a href="https://angel.co/court-garr?public_profile=1">
+              <FontAwesomeIcon icon={['fab', 'angellist']} />
+              </a>
+            </span>
+            <span>&nbsp;&nbsp;
+             <a href="https://www.linkedin.com/in/court-garr/">
+              <FontAwesomeIcon icon={['fab', 'linkedin']} />
+              </a>
+            </span>
+            </h3>
+        <br/>
+        <br/>
+        <a href="https://bulma.io">
+          <img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="128" height="24"/>
+        </a>
+          </div>
+        </div>
+
       </div>
-    </FooterHero>
-  </FooterContainer>
+    </FooterSection>
+
 )
 
-export default Footer
+export default Footer;

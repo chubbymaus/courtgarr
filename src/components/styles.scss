@@ -1,0 +1,131 @@
+@import "custom";
+@import '../../node_modules/bulma/bulma.sass';
+
+.main-content{
+
+}
+
+.navbar-item img {
+  max-height: 2.15rem;
+  margin-top: 5px;
+}
+
+.box{
+  margin-top: -100px;
+  margin-bottom: 75px;
+}
+
+// #proto-image{}
+.shadowed{
+  box-shadow:  0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);
+}
+
+.content ul {
+  list-style: none;
+  margin-left: 0;
+  margin-top: 1em;
+}
+li {
+  border-top: 1px solid rgba(0, 0, 0, .125);
+  padding: 5px;
+}
+#about-section{
+      background-image: url("../images/subtle_dots.png");
+      background-repeat: repeat;
+}
+
+.tile article{
+  min-height: 200px;
+  min-width: 300px;
+}
+.tilecontent{
+  display: none;
+}
+#infernotile{
+  background-image: url('../images/infernotile.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#infernotile:hover{
+  background-image: none;
+  background-color: $white;
+  
+}
+#squiblytile{
+  background-image: url('../images/squiblytile.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#squiblytile:hover{
+  background-image: none;
+  background-color: $white;
+}
+#blocworktile{
+  background-image: url('../images/blocworktile.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#blocworktile:hover{
+  background-image: none;
+  background-color: $white;
+}
+#infernocamptile{
+  background-image: url('../images/infernocamptile.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#infernocamptile:hover{
+  background-image: none;
+  background-color: $primary;
+}
+#kandantile{
+  background-image: url('../images/kandantile.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#kandantile:hover{
+  background-image: none;
+  background-color: $primary;
+}
+.notification{
+  padding: 1.5rem 1.25rem;
+}
+#bluehaustile{
+  background-image: url('../images/bluehaustile.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#bluehaustile:hover{
+  background-image: none;
+  background-color: $primary;
+}
+.tile article:hover{
+  background-color: tomato;
+  background-image: none;
+}
+.tile article .title{
+  display: block;
+}
+.tile article:hover{
+  .title,.tilecontent{
+    display: block;
+  }
+}
+.is-fixed-top{
+      -webkit-animation: fadein .25s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein .25s; /* Firefox < 16 */
+        -ms-animation: fadein .25s; /* Internet Explorer */
+         -o-animation: fadein .25s; /* Opera < 12.1 */
+            animation: fadein .25s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

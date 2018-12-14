@@ -1,16 +1,17 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import Header from '../components/Header'
-import ContactForm from '../components/ContactForm'
-import logo from '../img/cgicon_1.png';
-import Footer from '../components/Footer';
+// import { Link } from 'gatsby'
 
-const ContactPage = ({data}) => (
-  <div>
-    <Header bgColor={'#f3f5ff'} logoProp={logo} textColor={'#444'}/>
-    <ContactForm />
-    <Footer />
-  </div>  
-);
+import Layout from '../components/layout'
+// import Jumbotron from '../components/Home/Jumbotron'
+import About from '../components/Home/About'
 
-export default ContactPage;
+
+const ContactPage = () => (
+  <Layout>
+   
+    <About />
+
+  </Layout>
+)
+
+export default ContactPage

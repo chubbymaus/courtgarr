@@ -1,30 +1,23 @@
 import React from 'react'
-import Header from '../components/Header'
-import Hero from '../components/Jumbotron'
-import About from '../components/About'
-import Projects from '../components/Projects'
-import logo from '../img/cgicon_1.png';
-import ContactForm from '../components/ContactForm'
-import Footer from '../components/Footer';
-import Tools from '../components/Tools';
+// import { Link } from 'gatsby'
 
-if (typeof window !== 'undefined') {
-  // Make scroll behavior of internal links smooth
-  // eslint-disable-next-line global-require
-  require('smooth-scroll')('a[href*="#"]');
-}
-
+import Layout from '../components/layout'
+import Jumbotron from '../components/Home/Jumbotron'
+import About from '../components/Home/About'
+import Prototyping from '../components/Home/Prototyping';
+import Development from '../components/Home/Development';
+import Production from '../components/Home/Production';
+import Portfolio from '../components/Home/Portfolio';
 
 const IndexPage = () => (
-  <div>
-  <Header bgColor={'#f3f5ff'} logoProp={logo} textColor={'#444'}/>
-  <Hero bgColor={'#f3f5ff'} />
-  <About bgColor={'#45BA82'}/>
-  <Tools />
-  <Projects /> 
-  {/* <ContactForm /> */}
-  <Footer/>
-  </div>
+  <Layout>
+    <Jumbotron />
+    <About />
+    <Prototyping />
+    <Development />
+    <Production />
+    <Portfolio />
+  </Layout>
 )
 
 export default IndexPage
