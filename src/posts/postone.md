@@ -1,6 +1,6 @@
 ---
 slug: '/first-post'
-date: 'toda'
+date: '10-30-2015'
 title: 'My first post'
 ---
 

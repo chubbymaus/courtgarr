@@ -1,17 +1,13 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 import {
   FontAwesomeIcon
 } from '@fortawesome/react-fontawesome'
 
-
-
-const Archive = () => (
-  <StaticQuery
-    query={graphql`
+const POST_ARCHIVE_QUERY = graphql `
       query BlogPostsArchive {
         allMarkdownRemark(
-          limit: 10,
+          limit: 5,
           sort: {
             fields: [frontmatter___date],
             order: DESC
@@ -23,6 +19,7 @@ const Archive = () => (
               id
               frontmatter {
                 title
+                slug
               }
 
             }
@@ -30,25 +27,38 @@ const Archive = () => (
         }
       
       }
-    `}
+    `;
+
+const Archive = () => (
+  <StaticQuery
+    query={POST_ARCHIVE_QUERY}
     render={({allMarkdownRemark}) => (
       <>
 
  
-       <aside>
+       <aside className="container">
          <h3>Archive</h3>
+         <ul>
          {allMarkdownRemark.edges.map(edge => {
            if (edge.node.frontmatter.title === 'My First Gatsby Post') {
             return(
-           <li className='has-text-success'>{edge.node.frontmatter.title}  <FontAwesomeIcon icon={['far', 'gem']} /></li>
+           <li className='has-text-info' key={edge.node.frontmatter.slug} >
+           <Link to={`/posts/${edge.node.frontmatter.slug}`}>
+           {edge.node.frontmatter.title}  <FontAwesomeIcon icon={['far', 'pencil-ruler']} className="has-text-success" /></Link></li>
+           
             )
            } else {
             return(
-           <li className='has-text-primary'>{edge.node.frontmatter.title} <FontAwesomeIcon icon={['fab', 'node-js']} /></li>
+           <li className='has-text-primary' key={edge.node.frontmatter.slug}>
+           <Link to={`/posts/${edge.node.frontmatter.slug}`}>
+           {edge.node.frontmatter.title} <FontAwesomeIcon icon={['fab', 'node-js']} />
+           </Link>
+           </li>
             )
 
            }
          })}
+         </ul>
        </aside>
       </>
     )}
