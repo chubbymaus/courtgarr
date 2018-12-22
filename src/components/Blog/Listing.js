@@ -17,7 +17,7 @@ const LISTING_QUERY = graphql `
               frontmatter {
                 title
                 slug
-                date
+                date(formatString: "MMMM DD, YYYY")
               }
             }
           }
