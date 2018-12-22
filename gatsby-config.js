@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: 'Court Garr | Fullstack Developer',
+    siteUrl: 'https://www.courtgarr.com/'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
