@@ -61,6 +61,7 @@ module.exports = {
         plugins: [], // just in case those previously mentioned remark plugins sound cool :)
       },
     },
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-netlify`, // make sure to put last in the array
   ],
 }
