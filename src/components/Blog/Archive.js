@@ -40,11 +40,11 @@ const Archive = () => (
          <h3>Archive</h3>
          <ul>
          {allMarkdownRemark.edges.map(edge => {
-           if (edge.node.frontmatter.title === 'My First Gatsby Post') {
+           if (edge.node.frontmatter.topic === 'React') {
             return(
            <li className='has-text-info' key={edge.node.frontmatter.slug} >
            <Link to={`/posts/${edge.node.frontmatter.slug}`}>
-           {edge.node.frontmatter.title}  <FontAwesomeIcon icon={['far', 'pencil-ruler']} className="has-text-success" /></Link></li>
+           {edge.node.frontmatter.title}  <FontAwesomeIcon icon={['fab', 'react']} className="has-text-success" /></Link></li>
            
             )
            } else {
