@@ -36,10 +36,23 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-sass',
     {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/posts`,
         name: 'posts',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+        name: 'images',
       },
     },
     {
@@ -48,5 +61,6 @@ module.exports = {
         plugins: [], // just in case those previously mentioned remark plugins sound cool :)
       },
     },
+    `gatsby-plugin-netlify`, // make sure to put last in the array
   ],
 }

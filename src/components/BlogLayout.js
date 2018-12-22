@@ -41,7 +41,7 @@ const BlogLayout = ({ children }) => (
         </Helmet>
         <Navbar />
  
-        <div className="main-content">
+        <div className="blog-content container">
           {children}
         </div>
         <Footer />
