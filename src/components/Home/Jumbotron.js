@@ -54,7 +54,7 @@ const Jumbotron = () => (
                         </h2>
                         <ButtonGroup>
                         <Button className="is-info shadowed is-medium" href="#about">Learn More</Button>
-                        <Button className="is-success shadowed is-medium">View My Blog</Button>
+                        <Link to="/blog"><Button className="is-success shadowed is-medium">View My Blog</Button></Link>
                         </ButtonGroup>
                     </HeroText>
                     <div className="column is-half has-text-right" id="hero-image">

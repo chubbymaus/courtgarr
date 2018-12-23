@@ -8,11 +8,12 @@ import Prototyping from '../components/Home/Prototyping';
 import Development from '../components/Home/Development';
 import Production from '../components/Home/Production';
 import Portfolio from '../components/Home/Portfolio';
-
+import Skills from '../components/Home/Skills';
 const IndexPage = () => (
   <Layout>
     <Jumbotron />
     <About />
+    <Skills />
     <Prototyping />
     <Development />
     <Production />

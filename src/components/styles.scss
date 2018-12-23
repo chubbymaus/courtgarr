@@ -3,6 +3,7 @@
 
 .blog-content{
   margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .navbar-item img {
@@ -22,7 +23,14 @@
 .shadowed{
   box-shadow:  0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);
 }
+.card{
+  border-radius: 5px;
+}
 
+pre{
+  background-color: #33363b;
+  color: #3EADEA;
+}
 .content ul {
   list-style: none;
   margin-left: 0;

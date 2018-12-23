@@ -20,6 +20,7 @@ const POST_ARCHIVE_QUERY = graphql `
               frontmatter {
                 title
                 slug
+                topic
               }
 
             }
@@ -35,23 +36,24 @@ const Archive = () => (
     render={({allMarkdownRemark}) => (
       <>
 
- 
-       <aside className="container">
+      
+       <div className="card shadowed">
+        <div className="card-content">
          <h3>Archive</h3>
          <ul>
          {allMarkdownRemark.edges.map(edge => {
-           if (edge.node.frontmatter.topic === 'React') {
+           if (edge.node.frontmatter.topic === "react") {
             return(
            <li className='has-text-info' key={edge.node.frontmatter.slug} >
            <Link to={`/posts/${edge.node.frontmatter.slug}`}>
-           {edge.node.frontmatter.title}  <FontAwesomeIcon icon={['fab', 'react']} className="has-text-success" /></Link></li>
+           {edge.node.frontmatter.title}  <FontAwesomeIcon icon={['fab', 'vuejs']} className="has-text-success" /></Link></li>
            
             )
            } else {
             return(
            <li className='has-text-primary' key={edge.node.frontmatter.slug}>
            <Link to={`/posts/${edge.node.frontmatter.slug}`}>
-           {edge.node.frontmatter.title} <FontAwesomeIcon icon={['fab', 'node-js']} />
+           {edge.node.frontmatter.title} <FontAwesomeIcon icon={['fab', 'react']} />
            </Link>
            </li>
             )
@@ -59,7 +61,9 @@ const Archive = () => (
            }
          })}
          </ul>
-       </aside>
+         </div>
+       </div>
+      
       </>
     )}
   />

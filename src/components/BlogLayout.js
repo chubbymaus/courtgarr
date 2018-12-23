@@ -42,7 +42,9 @@ const BlogLayout = ({ children }) => (
         <Navbar />
  
         <div className="blog-content container">
+          <div className="">
           {children}
+          </div>
         </div>
         <Footer />
       </>
