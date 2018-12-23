@@ -7,9 +7,5 @@ topic: Html
 Testing this out
 
 ```
-<p>
-
-Test
-
-</p>
+console.log(‘hello world!’)
 ```
