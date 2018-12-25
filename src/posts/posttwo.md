@@ -1,8 +1,8 @@
 ---
-slug: "/hello-world"
-date: "10-30-2013"
-title: "My First Gatsby Post"
-topic: "nodejs"
+title: My First Gatsby Post
+slug: /hello-world
+date: 10-30-2013
+topic: Node
 ---
 
 ## Oooooh-weeee, my first blog post!
