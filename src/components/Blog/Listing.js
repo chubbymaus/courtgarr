@@ -40,7 +40,7 @@ const Listing = () => (
               {edge.node.frontmatter.title}
           </h2>
           </Link>   
-          <h2 className="subtitle">             
+          <h2 className="subtitle" style={{fontSize: '1.5rem'}}>             
             {edge.node.frontmatter.date} | {edge.node.frontmatter.topic}
           </h2>
           

@@ -42,19 +42,44 @@ const Archive = () => (
          <h3>Recent Posts</h3>
          <ul>
          {allMarkdownRemark.edges.map(edge => {
-           if (edge.node.frontmatter.topic === "react") {
+           if (edge.node.frontmatter.topic === "React") {
             return(
            <li className='has-text-info' key={edge.node.frontmatter.slug} >
            <Link to={`/posts/${edge.node.frontmatter.slug}`}>
-           {edge.node.frontmatter.title}  <FontAwesomeIcon icon={['fab', 'vuejs']} className="has-text-success" /></Link></li>
+           <FontAwesomeIcon icon={['fab', 'react']} className="has-text-info" />
+           &nbsp; {edge.node.frontmatter.title}  </Link></li>
            
             )
-           } else {
+           } else if (edge.node.frontmatter.topic === "nodejs") {
+            return(
+           <li className='has-text-info' key={edge.node.frontmatter.slug} >
+           <Link to={`/posts/${edge.node.frontmatter.slug}`}>
+           <FontAwesomeIcon icon={['fab', 'Node']} className="has-text-primary" />
+           &nbsp; {edge.node.frontmatter.title}  </Link></li>
+           
+            )
+           } else if (edge.node.frontmatter.topic === "Vue") {
+            return(
+           <li className='has-text-info' key={edge.node.frontmatter.slug} >
+           <Link to={`/posts/${edge.node.frontmatter.slug}`}>
+           <FontAwesomeIcon icon={['fab', 'vuejs']} className="has-text-success" />
+           &nbsp; {edge.node.frontmatter.title}  </Link></li>
+           
+            )
+           } else if (edge.node.frontmatter.topic === "Python") {
+             return (
+               <li className='has-text-info' key={edge.node.frontmatter.slug} >
+                 <Link to={`/posts/${edge.node.frontmatter.slug}`}>
+                   <FontAwesomeIcon icon={['fab', 'python']} className="has-text-success" />
+                   &nbsp; {edge.node.frontmatter.title}  </Link></li>
+
+             )
+           } else{
             return(
            <li className='has-text-primary' key={edge.node.frontmatter.slug}>
            <Link to={`/posts/${edge.node.frontmatter.slug}`}>
-           <FontAwesomeIcon icon={['fab', 'react']} />
-           {edge.node.frontmatter.title} 
+           <FontAwesomeIcon icon={['far', 'pencil-ruler']} />
+            &nbsp; {edge.node.frontmatter.title} 
            </Link>
            </li>
             )
