@@ -50,11 +50,11 @@ const Archive = () => (
            &nbsp; {edge.node.frontmatter.title}  </Link></li>
            
             )
-           } else if (edge.node.frontmatter.topic === "nodejs") {
+           } else if (edge.node.frontmatter.topic === "Nodejs") {
             return(
            <li className='has-text-info' key={edge.node.frontmatter.slug} >
            <Link to={`/posts/${edge.node.frontmatter.slug}`}>
-           <FontAwesomeIcon icon={['fab', 'Node']} className="has-text-primary" />
+           <FontAwesomeIcon icon={['fab', 'nodejs']} className="has-text-primary" />
            &nbsp; {edge.node.frontmatter.title}  </Link></li>
            
             )
