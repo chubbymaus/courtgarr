@@ -74,7 +74,15 @@ const Archive = () => (
                    &nbsp; {edge.node.frontmatter.title}  </Link></li>
 
              )
-           } else{
+           } else if (edge.node.frontmatter.topic === "Devops") {
+             return (
+               <li className='has-text-info' key={edge.node.frontmatter.slug} >
+                 <Link to={`/posts/${edge.node.frontmatter.slug}`}>
+                   <FontAwesomeIcon icon={['far', 'fire-extinguisher']} style={{color:"tomato"}} />
+                   &nbsp; {edge.node.frontmatter.title}  </Link></li>
+
+             )
+           } else {
             return(
            <li className='has-text-primary' key={edge.node.frontmatter.slug}>
            <Link to={`/posts/${edge.node.frontmatter.slug}`}>
