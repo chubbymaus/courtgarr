@@ -39,7 +39,7 @@ const Archive = () => (
       
        <div className="card shadowed">
         <div className="card-content">
-         <h3>Archive</h3>
+         <h3>Recent Posts</h3>
          <ul>
          {allMarkdownRemark.edges.map(edge => {
            if (edge.node.frontmatter.topic === "react") {

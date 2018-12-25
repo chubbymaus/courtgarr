@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby';
-
+import {
+  FontAwesomeIcon
+} from '@fortawesome/react-fontawesome'
 const LISTING_QUERY = graphql `
       query BlogPostListing {
         allMarkdownRemark(
@@ -33,7 +35,7 @@ const Listing = () => (
       allMarkdownRemark.edges.map(edge => (
         
         <article key={edge.node.frontmatter.slug}>
-          <h2 className="title">   
+          <h2 className="title has-text-primary">   
           <Link to={`/posts${edge.node.frontmatter.slug}`}>          
              {edge.node.frontmatter.title}
           </Link>   
