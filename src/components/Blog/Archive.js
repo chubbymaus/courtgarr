@@ -53,7 +53,8 @@ const Archive = () => (
             return(
            <li className='has-text-primary' key={edge.node.frontmatter.slug}>
            <Link to={`/posts/${edge.node.frontmatter.slug}`}>
-           {edge.node.frontmatter.title} <FontAwesomeIcon icon={['fab', 'react']} />
+           <FontAwesomeIcon icon={['fab', 'react']} />
+           {edge.node.frontmatter.title} 
            </Link>
            </li>
             )

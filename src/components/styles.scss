@@ -28,8 +28,13 @@
 }
 
 pre{
-  background-color: #33363b;
-  color: #3EADEA;
+  // background-color: #33363b;
+  // color: #3EADEA;
+  border-radius: 5px;
+}
+.gatsby-highlight{
+  margin: 25px 0;
+
 }
 .content ul {
   list-style: none;
