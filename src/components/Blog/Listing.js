@@ -35,13 +35,13 @@ const Listing = () => (
       allMarkdownRemark.edges.map(edge => (
         
         <article key={edge.node.frontmatter.slug}>
-          <h2 className="title has-text-primary">   
           <Link to={`/posts${edge.node.frontmatter.slug}`}>          
-             {edge.node.frontmatter.title}
-          </Link>   
+          <h2 className="title has-text-primary">   
+              {edge.node.frontmatter.title}
           </h2>
+          </Link>   
           <h2 className="subtitle">             
-             {edge.node.frontmatter.date}
+            {edge.node.frontmatter.date} | {edge.node.frontmatter.topic}
           </h2>
           
           <p>
