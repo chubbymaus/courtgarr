@@ -47,7 +47,7 @@ const Listing = () => (
           <p>
             {edge.node.excerpt}
           </p>
-          <Link to={`/posts${edge.node.frontmatter.slug}`}>Read More</Link>
+          <Link to={`/posts${edge.node.frontmatter.slug}`} className="return-link">Read More</Link>
           <hr style={{ backgroundColor:"#222", opacity: ".125", height:"1px"}}/>
         </article>
         
