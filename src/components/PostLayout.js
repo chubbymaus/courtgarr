@@ -19,7 +19,7 @@ export default class PostLayout extends Component {
         <div dangerouslySetInnerHTML={{
           __html: markdownRemark.html
           }} />
-          <Link to='/blog'><FontAwesomeIcon icon={['far', 'arrow-left']} /> Back to blog listing</Link>
+          <Link to='/blog' className="return-link"><FontAwesomeIcon icon={['far', 'arrow-left']} /> Back to blog listing</Link>
         </div>
         <div className="column is-one-quarter">  
           <Archive />
