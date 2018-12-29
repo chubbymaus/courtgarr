@@ -6,6 +6,6 @@ topic: Vue
 ---
 did this update?
 
-<iframe src="https://stackblitz.com/edit/react-2dosqu?embed=1&file=index.js&view=preview" style="width: 500px; height:500px; border: none"></iframe>
+<iframe src="https://stackblitz.com/edit/react-2dosqu?embed=1&file=index.js&view=preview" style="width: 100%; height:500px; border: none"></iframe>
 
 hop this e worked
