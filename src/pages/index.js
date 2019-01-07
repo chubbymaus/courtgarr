@@ -3,7 +3,6 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import Jumbotron from '../components/Home/Jumbotron'
-import About from '../components/Home/About'
 import Prototyping from '../components/Home/Prototyping';
 import Development from '../components/Home/Development';
 import Production from '../components/Home/Production';
@@ -12,11 +11,10 @@ import Skills from '../components/Home/Skills';
 const IndexPage = () => (
   <Layout>
     <Jumbotron />
-    <About />
     <Skills />
-    <Prototyping />
-    <Development />
     <Production />
+    <Development />
+    <Prototyping />
     <Portfolio />
   </Layout>
 )

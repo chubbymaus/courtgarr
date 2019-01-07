@@ -3,13 +3,13 @@ import React from 'react'
 
 import Layout from '../components/layout'
 // import Jumbotron from '../components/Home/Jumbotron'
-import About from '../components/Home/About'
+
 
 
 const ContactPage = () => (
   <Layout>
    
-    <About />
+   
 
   </Layout>
 )

@@ -1,8 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link';
 import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
-import HeroImage from '../../images/aboutImage.png';
+import HeroImage from '../../images/bizicons2.png';
 const Button = styled.a.attrs({
     className: 'button',
 })`

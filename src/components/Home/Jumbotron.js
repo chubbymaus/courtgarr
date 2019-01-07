@@ -53,7 +53,7 @@ const Jumbotron = () => (
                             I'm a Fullstack Developer and <br/>Graphic Designer...
                         </h2>
                         <ButtonGroup>
-                        <Button className="is-info shadowed is-medium" href="#about">Learn More</Button>
+                        <Button className="is-info shadowed is-medium" href="#skills">Learn More</Button>
                         <Link to="/blog"><Button className="is-success shadowed is-medium">View My Blog</Button></Link>
                         </ButtonGroup>
                     </HeroText>

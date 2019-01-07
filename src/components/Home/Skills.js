@@ -7,9 +7,9 @@ import {
 
 
 const Skills = () => (
-  
-    <section className="has-text-centered" >
-      <div className="container">
+    
+    <section className="has-text-centered">
+      <div className="container" >
         <div className="box shadowed has-background-white">
           <div className="content ">
             <div className="columns is-centered">

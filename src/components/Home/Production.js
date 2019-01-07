@@ -1,7 +1,7 @@
 import React from 'react'
 // import Link from 'gatsby-link';
 import styled from 'styled-components';
-import HeroImage from '../../images/aboutImage.png';
+import HeroImage from '../../images/design.png';
 import Fade from 'react-reveal/Fade';
 
 const Button = styled.a.attrs({
@@ -21,7 +21,7 @@ const Button = styled.a.attrs({
 const ButtonGroup = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
 
     @media only screen and (max-width: 600px){
       flex-direction: column;
@@ -31,7 +31,7 @@ const ButtonGroup = styled.div`
 const HeroText = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 
     .title{
       font-size: 2.5rem;
@@ -43,9 +43,9 @@ const HeroText = styled.div`
 const Image = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: flex-end;
 
-
+    margin-bottom: 50px;
 `;
 
 const Prototyping = () => (
