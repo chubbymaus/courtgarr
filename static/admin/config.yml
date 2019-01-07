@@ -16,5 +16,5 @@ collections:
       - { label: "Post Title", name: "title", widget: "string" }
       - { label: "Post Slug", name: "slug", widget: "string" }
       - { label: "Post Date", name: "date", widget: "date" }
-      - { label: "Post Topic", name: "topic", widget: "string" }
+      - { label: "Post Topic", name: "topic", widget: "select", options: ["React","Nodejs","Vue","Python","Devops","Design"] }
       - { label: "Post Body", name: "body", widget: "markdown" }
