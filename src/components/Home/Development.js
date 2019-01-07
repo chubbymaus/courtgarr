@@ -44,7 +44,7 @@ const Image = styled.div `
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-
+    max-height:237px;
 
 `;
 const Development = () => (
