@@ -7,7 +7,7 @@ import {
 const POST_ARCHIVE_QUERY = graphql `
       query BlogPostsArchive {
         allMarkdownRemark(
-          limit: 5,
+          limit: 10,
           sort: {
             fields: [frontmatter___date],
             order: DESC

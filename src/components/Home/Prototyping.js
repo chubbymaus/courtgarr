@@ -1,11 +1,12 @@
 import React from 'react'
+import {Link} from 'gatsby'
 import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
 import HeroImage from '../../images/bizicons3.png';
 const Button = styled.a.attrs({
     className: 'button',
 })`
-    width: 180px;
+    
     margin-top: .5rem;
     margin-bottom: .5rem;
     margin-left: 1rem;
@@ -57,14 +58,17 @@ const Prototyping = () => (
                     <Fade left>
                         
                         <h1 className="title has-text-white">
-                            IT'S GARRMANARNAR
+                            Marketing & Strategy
                         </h1>
                         <h2 className="subtitle has-text-white">
-                            I'm a Fullstack Developer and <br/>Graphic Designer...
+                            If you ever want people to use your app you need a good marketing strategy. I have a Bachelor's degree in Marketing and love helping companies make meaningful strategies.
                         </h2>
                         <ButtonGroup>
-                        <Button className="is-info shadowed is-medium" href="#about">Learn More</Button>
-                        <Button className="is-success shadowed is-medium">View My Blog</Button>
+                            <Link to="/contact">
+                        <Button className="is-success shadowed is-medium">
+                            Let's Get Some Traffic!
+                        </Button>
+                            </Link>
                         </ButtonGroup>
                     </Fade>
                     </HeroText>

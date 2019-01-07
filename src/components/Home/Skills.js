@@ -8,7 +8,7 @@ import {
 
 const Skills = () => (
     
-    <section className="has-text-centered">
+    <section className="has-text-centered" id="skills">
       <div className="container" >
         <div className="box shadowed has-background-white">
           <div className="content ">
@@ -23,7 +23,7 @@ const Skills = () => (
                 <p className="subtitle has-text-primary has-text-weight-normal">Design Tools</p>
                   <li>Balsamiq Mockups</li>
                   <li>Figma</li>
-                  <li>Invision</li>
+                  <li>Illustrator</li>
                   <li>Marvel</li>
                   <li>Pen &amp; Paper</li>
                   <li>Sketch</li>
@@ -35,16 +35,16 @@ const Skills = () => (
                 <h1 className="title is-size-4 is-spaced">Developer</h1>
                 <p>I tend to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
                 <p className="list-title has-text-primary has-text-weight-normal">Languages I speak:</p>
-                <p>HTML, Pug, Slim, CSS, Sass, Less</p>
+                <p>Javascript, React, Nodejs, Vue, Ruby on Rails</p>
                 <ul>
                   <p className="subtitle has-text-primary has-text-weight-normal">Dev Tools</p>
-                  <li>Atom</li>
-                  <li>Bitbucket</li>
+                  <li>VS code</li>
+                  <li>Wordpress</li>
                   <li>Bootstrap</li>
                   <li>Bulma</li>
-                  <li>Codekit</li>
-                  <li>Codepen</li>
+                  <li>Gatsbyjs</li>
                   <li>Github</li>
+                  <li>Shopify</li>
                 </ul>
               </div>
               

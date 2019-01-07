@@ -1,5 +1,5 @@
 import React from 'react'
-// import Link from 'gatsby-link';
+import Link from 'gatsby-link';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 
@@ -7,7 +7,7 @@ import HeroImage from '../../images/aboutImage.png';
 const Button = styled.a.attrs({
     className: 'button',
 })`
-    width: 180px;
+    
     margin-top: .5rem;
     margin-bottom: .5rem;
     margin-right: 1rem;
@@ -62,14 +62,15 @@ const Development = () => (
                     <HeroText className="column is-half">
                      <Fade right>   
                         <h1 className="title has-text-primary">
-                            IT'S GARRMANARNAR
+                           Development & Deployment
                         </h1>
                         <h2 className="subtitle has-text-primary">
-                            I'm a Fullstack Developer and <br/>Graphic Designer...
+                            Development using cutting edge technologies like Reactjs and GraphQL helps future proof your app. Also, with the help of things like Prettier and ESlint, I make sure everything is cleaned up and readable.
                         </h2>
                         <ButtonGroup>
-                        <Button className="is-info shadowed is-medium" href="#about">Learn More</Button>
-                        <Button className="is-success shadowed is-medium">View My Blog</Button>
+                        <Link to="/contact">
+                        <Button className="is-info shadowed is-medium" href="#about">Let's Build Something Great!</Button>
+                        </Link>
                         </ButtonGroup>
                       </Fade>  
                     </HeroText>
