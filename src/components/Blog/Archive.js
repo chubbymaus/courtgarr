@@ -78,7 +78,7 @@ const Archive = () => (
              return (
                <li className='has-text-info' key={edge.node.frontmatter.slug} >
                  <Link to={`/posts/${edge.node.frontmatter.slug}`}>
-                   <FontAwesomeIcon icon={['far', 'fire-extinguisher']} style={{color:"tomato"}} />
+                   <FontAwesomeIcon icon={['far', 'tools']} style={{color:"tomato"}} />
                    &nbsp; {edge.node.frontmatter.title}  </Link></li>
 
              )
