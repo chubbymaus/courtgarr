@@ -6,8 +6,13 @@ topic: Design
 ---
 Over the next few weeks I will be writing about the basics of UX Design based on the book 'UX for Beginners' by Joel Marsh. This book is split into 14 sections. My goal is to write one post per section sharing the basics of the book and what I learned along the way. 
 
+
+
 Let's get started...
 
-## What is UX Design?
+
+<h2 class="subtitle">
+ What is UX Design?
+</h2>
 
 A common misconception about UX Design is that making thing 'pretty' is effective enough. While designing attractive interfaces is important, it's not the main point of UX.
