@@ -1,6 +1,6 @@
 ---
 title: What is UX Design?
-slug: what-is-ux-design
+slug: /what-is-ux-design
 date: 2019-02-19T03:36:30.668Z
 topic: Design
 ---
