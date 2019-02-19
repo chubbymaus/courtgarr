@@ -11,7 +11,7 @@ Over the next few weeks I will be writing about the basics of UX Design based on
 Let's get started...
 
 
-<h2 class="subtitle">
+<h2 class="subtitle" style="font-size: 1.5rem;">
  What is UX Design?
 </h2>
 
