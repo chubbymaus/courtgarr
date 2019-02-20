@@ -81,3 +81,5 @@ Analysis
 <h2 class="subtitle" style="font-size: 1.5rem;">
  Perspective
 </h2>
+
+<br>
