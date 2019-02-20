@@ -35,7 +35,7 @@ Psychology
 * Are you thinking of the user's wants and needs, or the your own (aka the Businesses)?
 * Are you assuming they know something that they haven't learned yet?
 
-
+<br>
 
 <h3 class="subtitle" style="font-size: 1.25rem;">
 Usability
@@ -45,7 +45,7 @@ Usability
 * Have you provided everything the user needs to know?
 * If the user doesn't read the fine print, does it still work/make sense?
 
-
+<br>
 <h3 class="subtitle" style="font-size: 1.25rem;">
 Design
 </h3>
@@ -53,6 +53,7 @@ Design
 * Do users think it looks good? Do they trust it immediately?
 * Does it communicate the purpose and function without words?
 * Does the design lead the user's eyes to the right places? How do you know?
+<br>
 
 <h3 class="subtitle" style="font-size: 1.25rem;">
 Copywriting
@@ -61,6 +62,7 @@ Copywriting
 * Does it motivate the user to complete their goal? Is that what we want?
 * Does it reduce user uncertainty/anxiety?
 * Is it clear, direct, simple, and functional?
+<br>
 
 <h3 class="subtitle" style="font-size: 1.25rem;">
 Analysis
