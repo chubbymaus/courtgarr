@@ -23,10 +23,11 @@ A common misconception about UX Design is that making thing 'pretty' is effectiv
 <h2 class="subtitle" style="font-size: 1.5rem;">
  The Five Main Ingredients of UX
 </h2>
-<p>
+
 In the book Joel Marsh identifies "Five Main Ingredients of UX". These are five things that every UX designer needs to keep in mind while working on a project. The "Five Ingredients" are: Psychology, Usability, Design, Copywriting, and Analysis. Let's take a quick look at some questions that can help us understand each of these ingredients.
-</p>
+
 <br>
+
 <h3 class="subtitle" style="font-size: 1.25rem;">
 Psychology
 </h3>
@@ -46,6 +47,7 @@ Usability
 * If the user doesn't read the fine print, does it still work/make sense?
 
 <br>
+
 <h3 class="subtitle" style="font-size: 1.25rem;">
 Design
 </h3>
@@ -53,6 +55,7 @@ Design
 * Do users think it looks good? Do they trust it immediately?
 * Does it communicate the purpose and function without words?
 * Does the design lead the user's eyes to the right places? How do you know?
+
 <br>
 
 <h3 class="subtitle" style="font-size: 1.25rem;">
@@ -62,6 +65,7 @@ Copywriting
 * Does it motivate the user to complete their goal? Is that what we want?
 * Does it reduce user uncertainty/anxiety?
 * Is it clear, direct, simple, and functional?
+
 <br>
 
 <h3 class="subtitle" style="font-size: 1.25rem;">
