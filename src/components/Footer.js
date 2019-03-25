@@ -28,9 +28,9 @@ const Footer = () => (
         <div className="columns has-text-white is-centered"> 
           <div className="column is-half">
             <h3 style={{fontSize: '2rem'}}>
-            <a href="https://dribbble.com/court_garr">
+            {/* <a href="https://dribbble.com/court_garr">
               <FontAwesomeIcon icon={['fab', 'dribbble']} />
-            </a>
+            </a> */}
             <span>&nbsp;&nbsp;
               <a href="https://www.behance.net/court090c">
               <FontAwesomeIcon icon={['fab', 'behance']} />
@@ -41,11 +41,11 @@ const Footer = () => (
               <FontAwesomeIcon icon={['fab', 'github']} />
               </a>
             </span>
-            <span>&nbsp;&nbsp;
+            {/* <span>&nbsp;&nbsp;
               <a href="https://angel.co/court-garr?public_profile=1">
               <FontAwesomeIcon icon={['fab', 'angellist']} />
               </a>
-            </span>
+            </span> */}
             <span>&nbsp;&nbsp;
              <a href="https://www.linkedin.com/in/court-garr/">
               <FontAwesomeIcon icon={['fab', 'linkedin']} />
@@ -54,9 +54,9 @@ const Footer = () => (
             </h3>
         <br/>
         <br/>
-        <a href="https://bulma.io">
+        {/* <a href="https://bulma.io">
           <img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="128" height="24"/>
-        </a>
+        </a> */}
           </div>
         </div>
 

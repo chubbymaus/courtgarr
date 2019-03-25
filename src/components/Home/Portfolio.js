@@ -20,9 +20,9 @@ const Portfolio = () => (
         <Fade left>
         <article className="tile is-child shadowed has-text-centered notification is-primary has-text-primary" id="infernotile">
           <div className='tilecontent'>
-          <p className="title is-bold" style={{fontSize: '1.75rem'}}>Inferno Apps</p>
+          <p className="title is-bold" style={{fontSize: '1.75rem'}} >Inferno Apps</p>
           <p className="subtitle">Freelance Design Site</p>
-          <a className="button is-fullwidth is-success">View Site</a>
+          <a className="button is-fullwidth is-success"href="http://infernoapps.com">View Site</a>
           </div>
         </article>
         </Fade>
@@ -31,32 +31,32 @@ const Portfolio = () => (
         <div className='tilecontent'>
           <p className="title" style={{fontSize: '1.75rem'}}>Bluehaus</p>
           <p className="subtitle">Code Snippets</p>
-          <a className="button is-info is-fullwidth">View Site</a>
+          <a className="button is-info is-fullwidth" href="http://bluehaus.io">View Site</a>
           </div>
         </article>
         </Fade>
       </div>
       <div className="tile is-parent is-vertical">
-        <Fade down>
+        <Fade right>
         <article className="tile is-child shadowed has-text-centered notification is-primary has-text-primary" id="squiblytile">
           <div className='tilecontent'>
           <p className="title is-bold" style={{fontSize: '1.75rem'}}>Squibly</p>
           <p className="subtitle">Secure Messaging App</p>
-          <a className="button is-fullwidth is-success">View Site</a>
+          <a className="button is-fullwidth is-success" href="https://squibly.io">View Site</a>
           </div>
         </article>
         </Fade>
-        <Fade up>
+        <Fade right>
         <article className="tile is-child shadowed has-text-centered notification is-white has-text-white" id="infernocamptile">
         <div className='tilecontent'>
           <p className="title" style={{fontSize: '1.75rem'}}>InfernoCamp</p>
           <p className="subtitle">Learning Management<br/>System</p>
-          <a className="button is-info is-fullwidth">View Site</a>
+          <a className="button is-info is-fullwidth" href="http://infernocamp.com">View Site</a>
           </div>
         </article>
         </Fade>
       </div>
-      <div className="tile is-parent is-vertical">
+      {/* <div className="tile is-parent is-vertical">
         <Fade right>
         <article className="tile is-child shadowed has-text-centered notification is-primary has-text-primary" id="blocworktile">
           <div className='tilecontent'>
@@ -65,8 +65,8 @@ const Portfolio = () => (
           <a className="button is-fullwidth is-success">View Site</a>
           </div>
         </article>
-        </Fade>
-        <Fade right>
+        </Fade> */}
+        {/* <Fade right>
         <article className="tile is-child shadowed has-text-centered notification is-white has-text-white" id="kandantile">
         <div className='tilecontent'>
           <p className="title" style={{fontSize: '1.75rem'}}>Kandan</p>
@@ -74,8 +74,8 @@ const Portfolio = () => (
           <a className="button is-info is-fullwidth">View Site</a>
           </div>
         </article>
-        </Fade>
-      </div>
+        </Fade> */}
+      {/* </div> */}
     </div>
   </div>
 </div>
