@@ -1,7 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link';
 import styled from 'styled-components';
-import HeroImage from '../images/screens.png';
 import {
   FontAwesomeIcon
 } from '@fortawesome/react-fontawesome'

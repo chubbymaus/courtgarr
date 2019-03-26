@@ -1,8 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby';
-import {
-  FontAwesomeIcon
-} from '@fortawesome/react-fontawesome'
+
 const LISTING_QUERY = graphql `
       query BlogPostListing {
         allMarkdownRemark(

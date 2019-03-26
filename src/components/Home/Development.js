@@ -56,7 +56,7 @@ const Development = () => (
                     <Image className="column is-half has-text-right" id="hero-image">
                     <Fade left>
 
-                        <img src={HeroImage} alt="Hero Image" />
+                        <img src={HeroImage} alt="Hero" />
                     </Fade>
                     </Image>
                     <HeroText className="column is-half">

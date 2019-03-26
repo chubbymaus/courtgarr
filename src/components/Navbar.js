@@ -48,9 +48,7 @@ class Navbar extends Component {
                             <Link className="navbar-item" to="/">
                                 <img src={this.state.logo} alt="Logo"/>
                             </Link>
-                            <a
-                                
-                                role="button"
+                            <div  role="button"
                                 className = {
                                   this.state.menuOpen ? `${this.state.mobileToggle} is-active` : `${this.state.mobileToggle}`
                                 }
@@ -61,7 +59,7 @@ class Navbar extends Component {
                                 <span aria-hidden="true"></span>
                                 <span aria-hidden="true"></span>
                                 <span aria-hidden="true"></span>
-                            </a>
+                            </div>
                         </div>
                         <div className = {
                           this.state.menuOpen ? `${this.state.mobile} is-active` : 'navbar-menu'

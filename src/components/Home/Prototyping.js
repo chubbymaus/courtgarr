@@ -75,7 +75,7 @@ const Prototyping = () => (
 
                     <Image className="column has-text-left is-half" id="proto-image">
                     <Fade right>
-                        <img src={HeroImage} alt="Hero Image" />
+                        <img src={HeroImage} alt="Hero" />
                     </Fade>
                     </Image>
                 </div>

@@ -58,7 +58,7 @@ const Jumbotron = () => (
                         </ButtonGroup>
                     </HeroText>
                     <div className="column is-half has-text-right" id="hero-image">
-                        <img src={HeroImage} alt="Hero Image" />
+                        <img src={HeroImage} alt="Hero" />
                     </div>
                 </div>
             </div>
