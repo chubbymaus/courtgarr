@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'gatsby'
 import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
-import HeroImage from '../../images/bizicons3.png';
+import HeroImage from '../../images/planningpic.png';
 const Button = styled.a.attrs({
     className: 'button',
 })`
@@ -43,7 +43,7 @@ const HeroText = styled.div`
 const Image = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: flex-end;
 
 
 `;
@@ -58,7 +58,7 @@ const Prototyping = () => (
                     <Fade left>
                         
                         <h1 className="title has-text-white">
-                            Marketing & Strategy
+                            Project Management & Strategy
                         </h1>
                         <h2 className="subtitle has-text-white">
                             If you ever want people to use your app you need a good marketing strategy. I have a Bachelor's degree in Marketing and love helping companies make meaningful strategies.
