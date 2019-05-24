@@ -43,7 +43,7 @@ const HeroText = styled.div`
 const Image = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-around;
 
 
 `;
