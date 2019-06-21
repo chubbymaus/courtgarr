@@ -1,47 +1,18 @@
 import React, { Component } from "react"
 import Link from "gatsby-link"
-import Logo from "../images/courtgarr2.png"
 import Icon from "../images/courtgarr3.png"
 
 class Navbar extends Component {
   state = {
     menuOpen: false,
     isTop: true,
-    navColor: "navbar is-info",
-    logo: Logo,
-    contact: "button is-white has-text-white is-outlined is-fullwidth",
-    mobile: "navbar-menu has-background-info has-text-white",
-    mobileToggle: "navbar-burger has-text-white",
+    navColor: "navbar is-white shadowed is-fixed-top",
+    logo: Icon,
+    contact: "button is-info is-outlined is-fullwidth",
+    mobile: "navbar-menu has-background-white has-text-primary",
+    mobileToggle: "navbar-burger has-text-primary",
   }
 
-  menuToggleClickHandler = () => {
-    this.setState(prevState => {
-      return { menuOpen: !prevState.menuOpen }
-    })
-  }
-
-  componentDidMount() {
-    document.addEventListener("scroll", () => {
-      const isTop = window.scrollY < 75
-      if (isTop !== this.state.isTop) {
-        this.setState({
-          navColor: "navbar is-white shadowed is-fixed-top",
-          logo: Icon,
-          contact: "button is-info is-outlied is-fullwidth",
-          mobile: "navbar-menu has-background-white has-text-primary",
-          mobileToggle: "navbar-burger has-text-primary",
-        })
-      } else {
-        this.setState({
-          navColor: "navbar is-info",
-          logo: Logo,
-          contact: "button is-white has-text-white is-outlined is-fullwidth",
-          mobile: "navbar-menu has-background-info has-text-white",
-          mobileToggle: "navbar-burger has-text-white",
-        })
-      }
-    })
-  }
   render() {
     return (
       <div>

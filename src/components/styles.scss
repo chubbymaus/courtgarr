@@ -1,9 +1,9 @@
 @import "custom";
 @import '../../node_modules/bulma/bulma.sass';
 
-.blog-content{
- 
-  margin:25px auto;
+.blog-content {
+  padding-top: 100px;
+  margin: 25px auto;
 }
 
 .navbar-item img {
@@ -11,145 +11,154 @@
   margin-top: 5px;
 }
 
+#hero-image {}
+
 .subtitle:not(:last-child) {
-  margin-bottom:5px;
+  margin-bottom: 5px;
 }
-.box{
+
+.box {
   margin-top: -100px;
   margin-bottom: 75px;
 }
 
 // #proto-image{}
-.shadowed{
+.shadowed {
   box-shadow: 0 0 35px 0 rgba(0, 0, 0, .18);
 }
-.card{
+
+.card {
   border-radius: 5px;
 }
 
-pre{
+pre {
   // background-color: #33363b;
   // color: #3EADEA;
   border-radius: 5px;
 }
-.gatsby-highlight{
+
+.gatsby-highlight {
   margin: 25px 0;
 
 }
-.return-link{
+
+.return-link {
   margin: 25px 0;
 }
+
 .content ul {
   list-style: none;
   margin-left: 0;
   margin-top: 1em;
 }
+
 li {
   border-top: 1px solid rgba(0, 0, 0, .125);
   padding: 5px;
 }
-#about-section{
-      background-image: url("../images/subtle_dots.png");
-      background-repeat: repeat;
+
+#about-section {
+  background-image: url("../images/subtle_dots.png");
+  background-repeat: repeat;
 }
 
-.tile article{
+.tile article {
   min-height: 200px;
   min-width: 300px;
 }
-.tilecontent{
+
+.tilecontent {
   display: none;
 }
-#infernotile{
-  background-image: url('../images/infernotile.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-#infernotile:hover{
+
+
+
+#infernotile:hover {
   background-image: none;
   background-color: $white;
-  
+
 }
-#squiblytile{
-  background-image: url('../images/squiblytile.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#squiblytile:hover{
+
+
+
+#squiblytile:hover {
   background-image: none;
   background-color: $white;
 }
-#blocworktile{
-  background-image: url('../images/blocworktile.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#blocworktile:hover{
+
+
+
+#blocworktile:hover {
   background-image: none;
   background-color: $white;
 }
-#infernocamptile{
-  background-image: url('../images/infernocamptile.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#infernocamptile:hover{
+
+
+
+#infernocamptile:hover {
   background-image: none;
   background-color: $primary;
 }
-#kandantile{
-  background-image: url('../images/kandantile.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#kandantile:hover{
+
+
+
+#kandantile:hover {
   background-image: none;
   background-color: $primary;
 }
-.notification{
+
+.notification {
   padding: 1.5rem 1.25rem;
 }
-#bluehaustile{
-  background-image: url('../images/bluehaustile.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#bluehaustile:hover{
+
+
+
+#bluehaustile:hover {
   background-image: none;
   background-color: $primary;
 }
-.tile article:hover{
+
+.tile article:hover {
   background-color: tomato;
   background-image: none;
 }
-.tile article .title{
+
+.tile article .title {
   display: block;
 }
-.tile article:hover{
-  .title,.tilecontent{
+
+.tile article:hover {
+
+  .title,
+  .tilecontent {
     display: block;
   }
 }
-.contact-card{
+
+.contact-card {
   background-color: #ffffff !important;
 }
-.is-fixed-top{
-      -webkit-animation: fadein .25s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein .25s; /* Firefox < 16 */
-        -ms-animation: fadein .25s; /* Internet Explorer */
-         -o-animation: fadein .25s; /* Opera < 12.1 */
-            animation: fadein .25s;
+
+.is-fixed-top {
+  -webkit-animation: fadein .25s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein .25s;
+  /* Firefox < 16 */
+  -ms-animation: fadein .25s;
+  /* Internet Explorer */
+  -o-animation: fadein .25s;
+  /* Opera < 12.1 */
+  animation: fadein .25s;
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 1087px) {

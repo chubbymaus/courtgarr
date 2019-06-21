@@ -4,27 +4,25 @@ exports.createPages = ({graphql, actions}) => {
   const { createPage } = actions;
   return new Promise((res, rej) => {
     graphql(`
-    {
-      allMarkdownRemark {
-        edges {
-          node {
-            frontmatter {
+      {
+        allContentfulBlog {
+          edges {
+            node {
               slug
             }
           }
         }
-      }
-    }`).then(results => {
-      results.data.allMarkdownRemark.edges.forEach(({node}) => {
-        createPage({
-          path: `/posts${node.frontmatter.slug}`,
-          component: path.resolve('./src/components/PostLayout.js'),
-          context: {
-            slug: node.frontmatter.slug,
-          }
+      }`).then(results => {
+            results.data.allContentfulBlog.edges.forEach(({node}) => {
+              createPage({
+                path: `blog/${node.slug}`,
+                component: path.resolve('./src/posts/PostPage.js'),
+                context: {
+                  slug: node.slug,
+                }
+              });
+            })
+            res();
+          })
         });
-      })
-      res();
-    })
-  });
-}
+      }
