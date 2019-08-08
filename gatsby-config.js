@@ -1,3 +1,8 @@
+const dotenv = require("dotenv");
+
+if (process.env.NODE_ENV !== "production") {
+  dotenv.config();
+}
 module.exports = {
   siteMetadata: {
     title: "Court Garr"
@@ -17,8 +22,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: "7lh30egvcf1r",
-        accessToken: "UBdynbOyjyqV1HritlML07Ss4PW7rSjlWXLlXCNQENE"
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       }
     },
     {

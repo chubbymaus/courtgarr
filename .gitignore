@@ -3,6 +3,7 @@
 node_modules
 yarn-error.log
 .vscode
+.env
 # Build directory
 /public
 .DS_Store

@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const POST_ARCHIVE_QUERY = graphql`
   query ArchivePostListing {
@@ -9,6 +10,8 @@ const POST_ARCHIVE_QUERY = graphql`
           id
           title
           slug
+          iconClass
+          iconName
         }
       }
     }
@@ -25,7 +28,12 @@ const Archive = () => (
           {allContentfulBlog.edges.map(edge => (
             <ul key={edge.node.id}>
               <Link to={`/blog/${edge.node.slug}`}>
-                <li className=" has-text-info">{edge.node.title}</li>
+                <li className=" has-text-info">
+                  {edge.node.title} &nbsp;
+                  <FontAwesomeIcon
+                    icon={[`${edge.node.iconClass}`, `${edge.node.iconName}`]}
+                  />
+                </li>
               </Link>
             </ul>
           ))}
@@ -33,6 +41,6 @@ const Archive = () => (
       </div>
     )}
   />
-)
+);
 
 export default Archive
