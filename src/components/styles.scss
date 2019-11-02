@@ -114,3 +114,8 @@ li {
     margin: 25px 15px;
   }
 }
+@media screen and (max-width: 768px) {
+ #header-image{
+   display:none;
+ }
+}

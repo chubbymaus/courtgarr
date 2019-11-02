@@ -63,7 +63,7 @@ const Jumbotron = () => (
               </Link>
             </ButtonGroup>
           </HeroText>
-          <div className='column has-text-centered'>
+          <div className='column has-text-centered' id='header-image'>
             <img src={JumboImage} />
           </div>
         </div>
