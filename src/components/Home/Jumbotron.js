@@ -1,19 +1,20 @@
-import React from "react"
-import Link from "gatsby-link"
-import styled from "styled-components"
-import HeroImage from "../../images/aboutImage.png"
+import React from 'react';
+import Link from 'gatsby-link';
+import styled from 'styled-components';
+import JumboImage from '../../images/coding2.png';
 const Button = styled.a.attrs({
-  className: "button",
+  className: 'button'
 })`
   width: 180px;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-right: 1rem;
-
+  border-radius: 0;
+  border-width: 2px;
   @media only screen and (max-width: 600px) {
     width: 100%;
   }
-`
+`;
 
 const ButtonGroup = styled.div`
   display: flex;
@@ -23,52 +24,52 @@ const ButtonGroup = styled.div`
   @media only screen and (max-width: 600px) {
     flex-direction: column;
   }
-`
+`;
 
 const HeroText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  .title {
-    font-size: 2.5rem;
-  }
-  .subtitle {
-    font-size: 1.75rem;
-  }
-`
+`;
 
 const Jumbotron = () => (
-  <section className="hero has-background-info is-fullheight is-bold">
-    <div className="hero-body">
-      <div className="container has-text-left">
-        <div className="columns">
-          <HeroText className="column is-half">
-            <h1 className="title has-text-white has-text-weight-bold">
-              Hi! My Name Is Court
+  <section
+    className='hero has-background-info is-fullheight is-bold'
+    id='jumbo-bg'
+  >
+    <div className='hero-body'>
+      <div className='container has-text-left'>
+        <div className='columns'>
+          <HeroText className='column'>
+            <h1 className='title has-text-primary has-text-weight-bold '>
+              <span className='half-highlight is-size-1'>
+                Hi! My Name Is Court
+              </span>
             </h1>
-            <h2 className="has-text-weight-light subtitle has-text-white">
-              I'm a Fullstack Developer and <br />
-              Designer...
+            <h2 className='has-text-weight-light subtitle has-text-primary is-size-2'>
+              I'm a Fullstack Developer and Designer...
             </h2>
             <ButtonGroup>
-              <Button className="is-primary shadowed is-medium" href="#skills">
+              <Button
+                className='is-primary is-outlined is-medium'
+                href='#skills'
+              >
                 Learn More
               </Button>
-              <Link to="/blog">
-                <Button className="is-success shadowed is-medium">
-                  View My Blog
+              <Link to='/blog'>
+                <Button className='is-outlined is-primary is-medium'>
+                  Visit My Blog
                 </Button>
               </Link>
             </ButtonGroup>
           </HeroText>
-          <div className="column is-half has-text-right" id="hero-image">
-            <img src={HeroImage} alt="Hero" />
+          <div className='column has-text-centered'>
+            <img src={JumboImage} />
           </div>
         </div>
       </div>
     </div>
   </section>
-)
+);
 
-export default Jumbotron
+export default Jumbotron;

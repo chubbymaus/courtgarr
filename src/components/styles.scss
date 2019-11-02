@@ -31,6 +31,11 @@
   border-radius: 5px;
 }
 
+.button {
+  border-radius: 0;
+  border-width: 2px;
+}
+
 pre {
   // background-color: #33363b;
   // color: #3EADEA;
@@ -57,83 +62,26 @@ li {
   padding: 5px;
 }
 
-#about-section {
-  background-image: url("../images/subtle_dots.png");
+#jumbo-bg {
+  background-image: url("../images/funky-lines.png");
+  background-repeat: repeat;
+  margin-top: -52px !important;
+  min-height: 115vh;
+}
+
+#footer-bg {
+  background-image: url("../images/cartographer.png");
   background-repeat: repeat;
 }
 
-.tile article {
-  min-height: 200px;
-  min-width: 300px;
+.clearBG {
+  background-color: transparent !important;
 }
 
-.tilecontent {
-  display: none;
+.half-highlight {
+  background: linear-gradient(to top, #03a9f4 25%, transparent 25%);
 }
 
-
-
-#infernotile:hover {
-  background-image: none;
-  background-color: $white;
-
-}
-
-
-
-#squiblytile:hover {
-  background-image: none;
-  background-color: $white;
-}
-
-
-
-#blocworktile:hover {
-  background-image: none;
-  background-color: $white;
-}
-
-
-
-#infernocamptile:hover {
-  background-image: none;
-  background-color: $primary;
-}
-
-
-
-#kandantile:hover {
-  background-image: none;
-  background-color: $primary;
-}
-
-.notification {
-  padding: 1.5rem 1.25rem;
-}
-
-
-
-#bluehaustile:hover {
-  background-image: none;
-  background-color: $primary;
-}
-
-.tile article:hover {
-  background-color: tomato;
-  background-image: none;
-}
-
-.tile article .title {
-  display: block;
-}
-
-.tile article:hover {
-
-  .title,
-  .tilecontent {
-    display: block;
-  }
-}
 
 .contact-card {
   background-color: #ffffff !important;
