@@ -11,7 +11,9 @@
   margin-top: 5px;
 }
 
-#hero-image {}
+#skills-section {
+  padding: 1rem;
+}
 
 .subtitle:not(:last-child) {
   margin-bottom: 5px;
@@ -65,7 +67,7 @@ li {
 #jumbo-bg {
   background-image: url("../images/funky-lines.png");
   background-repeat: repeat;
-  margin-top: -52px !important;
+  margin-top: -55px !important;
   min-height: 115vh;
 }
 
@@ -114,8 +116,9 @@ li {
     margin: 25px 15px;
   }
 }
+
 @media screen and (max-width: 768px) {
- #header-image{
-   display:none;
- }
+  #header-image {
+    display: none;
+  }
 }

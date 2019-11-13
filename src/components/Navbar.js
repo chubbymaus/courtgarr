@@ -77,11 +77,11 @@ class Navbar extends Component {
                     Home
                   </Link>
                 </div>
-                <div className='navbar-item'>
+                {/* <div className='navbar-item'>
                   <Link to='/wordpress' className='has-text-dark'>
                     Wordpress Solutions
                   </Link>
-                </div>
+                </div> */}
                 <div className='navbar-item'>
                   <Link to='/blog' className='has-text-dark'>
                     Blog

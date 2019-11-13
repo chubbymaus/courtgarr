@@ -30,6 +30,7 @@ const HeroText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 `;
 
 const Jumbotron = () => (
@@ -39,7 +40,7 @@ const Jumbotron = () => (
   >
     <div className='hero-body'>
       <div className='container has-text-left'>
-        <div className='columns'>
+        <div className='columns is-centered'>
           <HeroText className='column'>
             <h1 className='title has-text-primary has-text-weight-bold '>
               <span className='half-highlight is-size-1'>
@@ -63,9 +64,9 @@ const Jumbotron = () => (
               </Link>
             </ButtonGroup>
           </HeroText>
-          <div className='column has-text-centered' id='header-image'>
+          {/* <div className='column has-text-centered' id='header-image'>
             <img src={JumboImage} />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
