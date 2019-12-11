@@ -75,6 +75,11 @@ li {
   min-height: 115vh;
 }
 
+#lines-bg {
+  background-image: url("../images/funky-lines.png");
+  background-repeat: repeat;
+}
+
 #footer-bg {
   background-image: url("../images/cartographer.png");
   background-repeat: repeat;
@@ -86,6 +91,14 @@ li {
 
 .half-highlight {
   background: linear-gradient(to top, #03a9f4 25%, transparent 25%);
+}
+
+.half-highlight-alt {
+  background: linear-gradient(to top, #6A80C4 25%, transparent 25%);
+}
+
+.half-highlight-success {
+  background: linear-gradient(to top, #00BE7C 25%, transparent 25%);
 }
 
 

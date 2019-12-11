@@ -27,13 +27,6 @@ const ButtonGroup = styled.div`
   }
 `;
 
-const HeroText = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
 const Jumbotron = () => (
   <section
     className='hero has-background-info is-fullheight is-bold'
@@ -42,7 +35,7 @@ const Jumbotron = () => (
     <div className='hero-body'>
       <div className='container'>
         <div className='columns'>
-          <HeroText className='column'>
+          <div className='column'>
             <h1 className='title has-text-primary has-text-weight-bold is-size-1'>
               <span className='half-highlight'>Hi! My Name Is Court</span>
             </h1>
@@ -62,7 +55,7 @@ const Jumbotron = () => (
                 </Button>
               </Link>
             </ButtonGroup>
-          </HeroText>
+          </div>
           <div className='column has-text-centered' id='header-image'>
             <img src={JumboImage} />
           </div>

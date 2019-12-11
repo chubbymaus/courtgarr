@@ -3,6 +3,8 @@ import { Link } from 'gatsby';
 import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
 import HeroImage from '../../images/screens2.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const Button = styled.a.attrs({
   className: 'button'
 })`
@@ -46,33 +48,32 @@ const Image = styled.div`
 `;
 
 const Prototyping = () => (
-  <section className='hero has-background-primary is-bold'>
+  <section className='hero has-background-link is-bold' id='lines-bg'>
     <div className='hero-body'>
       <div className='container'>
         <div className='columns'>
           <HeroText className='column has-text-right is-half'>
             <Fade left>
-              <h1 className='title has-text-white'>
-                Project Management & Strategy
+              <h1 className='title has-text-primary'>
+                <span className='half-highlight-success'>
+                  Project Planning & Strategy
+                </span>
               </h1>
-              <h2 className='subtitle has-text-white'>
+              <h2 className='subtitle has-text-primary'>
                 If you ever want people to use your app you need a good
                 marketing strategy. I have a Bachelor's degree in Marketing and
                 love helping companies make meaningful strategies.
               </h2>
-              <ButtonGroup>
-                <Link to='/contact'>
-                  <Button className='is-success shadowed is-medium'>
-                    Let's Get Some Traffic!
-                  </Button>
-                </Link>
-              </ButtonGroup>
             </Fade>
           </HeroText>
 
-          <Image className='column has-text-left is-half' id='proto-image'>
+          <Image className='column has-text-centered is-half' id='proto-image'>
             <Fade right>
-              <img src={HeroImage} alt='Hero' />
+              <FontAwesomeIcon
+                icon={['fal', 'chess']}
+                style={{ fontSize: '18rem' }}
+                className='has-text-primary'
+              />
             </Fade>
           </Image>
         </div>
