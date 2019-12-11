@@ -1,6 +1,10 @@
 @import "custom";
 @import '../../node_modules/bulma/bulma.sass';
 
+iframe {
+  min-height: 80vh;
+}
+
 .blog-content {
   padding-top: 100px;
   margin: 25px auto;
