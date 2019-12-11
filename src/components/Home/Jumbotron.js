@@ -43,12 +43,10 @@ const Jumbotron = () => (
       <div className='container'>
         <div className='columns'>
           <HeroText className='column'>
-            <h1 className='title has-text-primary has-text-weight-bold has-text-left'>
-              <span className='half-highlight is-size-1 has-text-left'>
-                Hi! My Name Is Court
-              </span>
+            <h1 className='title has-text-primary has-text-weight-bold is-size-1'>
+              <span className='half-highlight'>Hi! My Name Is Court</span>
             </h1>
-            <h2 className='has-text-weight-light subtitle has-text-primary is-size-2 has-text-left'>
+            <h2 className='has-text-weight-light subtitle has-text-primary is-size-2'>
               I'm a Fullstack Developer and Designer...
             </h2>
             <ButtonGroup>
